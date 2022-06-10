@@ -1,4 +1,4 @@
-# \TemplateFoldersApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -9,7 +9,6 @@ Method | HTTP request | Description
 [**GetTemplateFoldersId**](TemplateFoldersApi.md#GetTemplateFoldersId) | **Get** /template-folders/{folder_id} | Get template folder
 [**PatchTemplateFoldersId**](TemplateFoldersApi.md#PatchTemplateFoldersId) | **Patch** /template-folders/{folder_id} | Update template folder
 [**PostTemplateFolders**](TemplateFoldersApi.md#PostTemplateFolders) | **Post** /template-folders | Add template folder
-
 
 # **DeleteTemplateFoldersId**
 > DeleteTemplateFoldersId(ctx, folderId)
@@ -34,7 +33,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -50,11 +49,10 @@ Get all folders used to organize templates.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetTemplateFoldersOpts** | optional parameters | nil if no parameters
+ **optional** | ***TemplateFoldersApiGetTemplateFoldersOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetTemplateFoldersOpts struct
-
+Optional parameters are passed through a pointer to a TemplateFoldersApiGetTemplateFoldersOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -72,13 +70,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetTemplateFoldersId**
-> TemplateFolder GetTemplateFoldersId(ctx, folderId, optional)
+> TemplateFolder1 GetTemplateFoldersId(ctx, folderId, optional)
 Get template folder
 
 Get information about a specific folder used to organize templates.
@@ -89,11 +87,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **folderId** | **string**| The unique id for the template folder. | 
- **optional** | ***GetTemplateFoldersIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***TemplateFoldersApiGetTemplateFoldersIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetTemplateFoldersIdOpts struct
-
+Optional parameters are passed through a pointer to a TemplateFoldersApiGetTemplateFoldersIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -102,7 +99,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TemplateFolder**](Template Folder.md)
+[**TemplateFolder1**](Template Folder_1.md)
 
 ### Authorization
 
@@ -110,13 +107,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchTemplateFoldersId**
-> TemplateFolder PatchTemplateFoldersId(ctx, folderId, body)
+> TemplateFolder1 PatchTemplateFoldersId(ctx, body, folderId)
 Update template folder
 
 Update a specific folder used to organize templates.
@@ -126,12 +123,12 @@ Update a specific folder used to organize templates.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **folderId** | **string**| The unique id for the template folder. | 
   **body** | [**TemplateFolder2**](TemplateFolder2.md)|  | 
+  **folderId** | **string**| The unique id for the template folder. | 
 
 ### Return type
 
-[**TemplateFolder**](Template Folder.md)
+[**TemplateFolder1**](Template Folder_1.md)
 
 ### Authorization
 
@@ -145,7 +142,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostTemplateFolders**
-> TemplateFolder PostTemplateFolders(ctx, body)
+> TemplateFolder1 PostTemplateFolders(ctx, body)
 Add template folder
 
 Create a new template folder.
@@ -155,11 +152,11 @@ Create a new template folder.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**TemplateFolder1**](TemplateFolder1.md)|  | 
+  **body** | [**TemplateFolder**](TemplateFolder.md)|  | 
 
 ### Return type
 
-[**TemplateFolder**](Template Folder.md)
+[**TemplateFolder1**](Template Folder_1.md)
 
 ### Authorization
 

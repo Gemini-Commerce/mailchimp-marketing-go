@@ -1,4 +1,4 @@
-# \AccountExportsApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -6,7 +6,6 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**GetAccountExports**](AccountExportsApi.md#GetAccountExports) | **Get** /account-exports | List account exports
 [**PostAccountExport**](AccountExportsApi.md#PostAccountExport) | **Post** /account-exports | Add export
-
 
 # **GetAccountExports**
 > InlineResponse2001 GetAccountExports(ctx, optional)
@@ -19,11 +18,10 @@ Get a list of account exports for a given account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetAccountExportsOpts** | optional parameters | nil if no parameters
+ **optional** | ***AccountExportsApiGetAccountExportsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetAccountExportsOpts struct
-
+Optional parameters are passed through a pointer to a AccountExportsApiGetAccountExportsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -41,13 +39,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostAccountExport**
-> InlineResponse2001Exports PostAccountExport(ctx, body)
+> InlineResponse2002 PostAccountExport(ctx, body)
 Add export
 
 Create a new account export in your Mailchimp account.
@@ -61,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001Exports**](inline_response_200_1_exports.md)
+[**InlineResponse2002**](inline_response_200_2.md)
 
 ### Authorization
 

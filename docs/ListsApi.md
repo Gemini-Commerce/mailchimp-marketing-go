@@ -1,4 +1,4 @@
-# \ListsApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -71,7 +71,6 @@ Method | HTTP request | Description
 [**PutListsIdMembersId**](ListsApi.md#PutListsIdMembersId) | **Put** /lists/{list_id}/members/{subscriber_hash} | Add or update list member
 [**SearchTagsByName**](ListsApi.md#SearchTagsByName) | **Get** /lists/{list_id}/tag-search | Search for tags on a list by name.
 
-
 # **DeleteListsId**
 > DeleteListsId(ctx, listId)
 Delete list
@@ -95,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -124,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -142,7 +141,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
   **interestCategoryId** | **string**| The unique ID for the interest category. | 
-  **interestId** | **string**| The specific interest or &#39;group name&#39;. | 
+  **interestId** | **string**| The specific interest or &#x27;group name&#x27;. | 
 
 ### Return type
 
@@ -154,7 +153,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -171,7 +170,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
 
 ### Return type
 
@@ -183,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -200,7 +199,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
   **noteId** | **string**| The id for the note. | 
 
 ### Return type
@@ -213,7 +212,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -242,7 +241,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -271,7 +270,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -289,7 +288,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
   **segmentId** | **string**| The unique id for the segment. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
 
 ### Return type
 
@@ -301,7 +300,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -318,7 +317,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **webhookId** | **string**| The webhook&#39;s id. | 
+  **webhookId** | **string**| The webhook&#x27;s id. | 
 
 ### Return type
 
@@ -330,7 +329,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -347,12 +346,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
- **optional** | ***GetListMemberTagsOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
+ **optional** | ***ListsApiGetListMemberTagsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListMemberTagsOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListMemberTagsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -372,7 +370,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -388,11 +386,10 @@ Get information about all lists in the account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetListsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -403,7 +400,7 @@ Name | Type | Description  | Notes
  **sinceDateCreated** | **optional.String**| Restrict results to lists created after the set date. Uses ISO 8601 time format: 2015-10-21T15:41:36+00:00. | 
  **beforeCampaignLastSent** | **optional.String**| Restrict results to lists created before the last campaign send date. Uses ISO 8601 time format: 2015-10-21T15:41:36+00:00. | 
  **sinceCampaignLastSent** | **optional.String**| Restrict results to lists created after the last campaign send date. Uses ISO 8601 time format: 2015-10-21T15:41:36+00:00. | 
- **email** | **optional.String**| Restrict results to lists that include a specific subscriber&#39;s email address. | 
+ **email** | **optional.String**| Restrict results to lists that include a specific subscriber&#x27;s email address. | 
  **sortField** | **optional.String**| Returns files sorted by the specified field. | 
  **sortDir** | **optional.String**| Determines the order direction for sorted results. | 
  **hasEcommerceStore** | **optional.Bool**| Restrict results to lists that contain an active, connected, undeleted ecommerce store. | 
@@ -419,13 +416,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetListsId**
-> SubscriberList GetListsId(ctx, listId, optional)
+> SubscriberList1 GetListsId(ctx, listId, optional)
 Get list info
 
 Get information about a specific list in your Mailchimp account. Results include list members who have signed up but haven't confirmed their subscription yet and unsubscribed or cleaned.
@@ -436,11 +433,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***GetListsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -450,7 +446,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SubscriberList**](Subscriber List.md)
+[**SubscriberList1**](Subscriber List_1.md)
 
 ### Authorization
 
@@ -458,7 +454,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -475,11 +471,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***GetListsIdAbuseReportsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdAbuseReportsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdAbuseReportsOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdAbuseReportsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -498,7 +493,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -516,11 +511,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
   **reportId** | **string**| The id for the abuse report. | 
- **optional** | ***GetListsIdAbuseReportsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdAbuseReportsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdAbuseReportsIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdAbuseReportsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -540,7 +534,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -557,11 +551,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***GetListsIdActivityOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdActivityOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdActivityOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdActivityOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -580,7 +573,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -597,11 +590,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***GetListsIdClientsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdClientsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdClientsOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdClientsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -618,7 +610,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -635,11 +627,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***GetListsIdGrowthHistoryOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdGrowthHistoryOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdGrowthHistoryOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdGrowthHistoryOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -660,13 +651,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetListsIdGrowthHistoryId**
-> GrowthHistory GetListsIdGrowthHistoryId(ctx, listId, month, optional)
+> GrowthHistory1 GetListsIdGrowthHistoryId(ctx, listId, month, optional)
 Get growth history by month
 
 Get a summary of a specific list's growth activity for a specific month and year.
@@ -678,11 +669,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
   **month** | **string**| A specific month of list growth history. | 
- **optional** | ***GetListsIdGrowthHistoryIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdGrowthHistoryIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdGrowthHistoryIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdGrowthHistoryIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -692,7 +682,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GrowthHistory**](Growth History.md)
+[**GrowthHistory1**](Growth History_1.md)
 
 ### Authorization
 
@@ -700,7 +690,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -717,11 +707,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***GetListsIdInterestCategoriesOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdInterestCategoriesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdInterestCategoriesOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdInterestCategoriesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -741,13 +730,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetListsIdInterestCategoriesId**
-> InterestCategory GetListsIdInterestCategoriesId(ctx, listId, interestCategoryId, optional)
+> InterestCategory1 GetListsIdInterestCategoriesId(ctx, listId, interestCategoryId, optional)
 Get interest category info
 
 Get information about a specific interest category.
@@ -759,11 +748,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
   **interestCategoryId** | **string**| The unique ID for the interest category. | 
- **optional** | ***GetListsIdInterestCategoriesIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdInterestCategoriesIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdInterestCategoriesIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdInterestCategoriesIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -773,7 +761,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InterestCategory**](Interest Category.md)
+[**InterestCategory1**](Interest Category_1.md)
 
 ### Authorization
 
@@ -781,7 +769,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -799,11 +787,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
   **interestCategoryId** | **string**| The unique ID for the interest category. | 
- **optional** | ***GetListsIdInterestCategoriesIdInterestsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdInterestCategoriesIdInterestsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdInterestCategoriesIdInterestsOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdInterestCategoriesIdInterestsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -823,13 +810,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetListsIdInterestCategoriesIdInterestsId**
-> Interest GetListsIdInterestCategoriesIdInterestsId(ctx, listId, interestCategoryId, interestId, optional)
+> Interest1 GetListsIdInterestCategoriesIdInterestsId(ctx, listId, interestCategoryId, interestId, optional)
 Get interest in category
 
 Get interests or 'group names' for a specific category.
@@ -841,12 +828,11 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
   **interestCategoryId** | **string**| The unique ID for the interest category. | 
-  **interestId** | **string**| The specific interest or &#39;group name&#39;. | 
- **optional** | ***GetListsIdInterestCategoriesIdInterestsIdOpts** | optional parameters | nil if no parameters
+  **interestId** | **string**| The specific interest or &#x27;group name&#x27;. | 
+ **optional** | ***ListsApiGetListsIdInterestCategoriesIdInterestsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdInterestCategoriesIdInterestsIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdInterestCategoriesIdInterestsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -857,7 +843,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Interest**](Interest.md)
+[**Interest1**](Interest_1.md)
 
 ### Authorization
 
@@ -865,7 +851,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -882,11 +868,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***GetListsIdLocationsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdLocationsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdLocationsOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdLocationsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -903,13 +888,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetListsIdMembers**
-> ListMembers2 GetListsIdMembers(ctx, listId, optional)
+> ListMembers1 GetListsIdMembers(ctx, listId, optional)
 List members info
 
 Get information about members in a specific Mailchimp list.
@@ -920,11 +905,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***GetListsIdMembersOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdMembersOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdMembersOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdMembersOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -933,13 +917,13 @@ Name | Type | Description  | Notes
  **count** | **optional.Int32**| The number of records to return. Default value is 10. Maximum value is 1000 | [default to 10]
  **offset** | **optional.Int32**| Used for [pagination](https://mailchimp.com/developer/marketing/docs/methods-parameters/#pagination), this it the number of records from a collection to skip. Default value is 0. | [default to 0]
  **emailType** | **optional.String**| The email type. | 
- **status** | **optional.String**| The subscriber&#39;s status. | 
+ **status** | **optional.String**| The subscriber&#x27;s status. | 
  **sinceTimestampOpt** | **optional.String**| Restrict results to subscribers who opted-in after the set timeframe. Uses ISO 8601 time format: 2015-10-21T15:41:36+00:00. | 
  **beforeTimestampOpt** | **optional.String**| Restrict results to subscribers who opted-in before the set timeframe. Uses ISO 8601 time format: 2015-10-21T15:41:36+00:00. | 
  **sinceLastChanged** | **optional.String**| Restrict results to subscribers whose information changed after the set timeframe. Uses ISO 8601 time format: 2015-10-21T15:41:36+00:00. | 
  **beforeLastChanged** | **optional.String**| Restrict results to subscribers whose information changed before the set timeframe. Uses ISO 8601 time format: 2015-10-21T15:41:36+00:00. | 
  **uniqueEmailId** | **optional.String**| A unique identifier for the email address across all Mailchimp lists. | 
- **vipOnly** | **optional.Bool**| A filter to return only the list&#39;s VIP members. Passing &#x60;true&#x60; will restrict results to VIP list members, passing &#x60;false&#x60; will return all list members. | 
+ **vipOnly** | **optional.Bool**| A filter to return only the list&#x27;s VIP members. Passing &#x60;true&#x60; will restrict results to VIP list members, passing &#x60;false&#x60; will return all list members. | 
  **interestCategoryId** | **optional.String**| The unique id for the interest category. | 
  **interestIds** | **optional.String**| Used to filter list members by interests. Must be accompanied by interest_category_id and interest_match. The value must be a comma separated list of interest ids present for any supplied interest categories. | 
  **interestMatch** | **optional.String**| Used to filter list members by interests. Must be accompanied by interest_category_id and interest_ids. \&quot;any\&quot; will match a member with any of the interest supplied, \&quot;all\&quot; will only match members with every interest supplied, and \&quot;none\&quot; will match members without any of the interest supplied. | 
@@ -950,7 +934,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListMembers2**](List Members_2.md)
+[**ListMembers1**](List Members_1.md)
 
 ### Authorization
 
@@ -958,7 +942,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -975,12 +959,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
- **optional** | ***GetListsIdMembersIdOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
+ **optional** | ***ListsApiGetListsIdMembersIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdMembersIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdMembersIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -998,7 +981,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1015,12 +998,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
- **optional** | ***GetListsIdMembersIdActivityOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
+ **optional** | ***ListsApiGetListsIdMembersIdActivityOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdMembersIdActivityOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdMembersIdActivityOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -1039,7 +1021,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1056,12 +1038,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
- **optional** | ***GetListsIdMembersIdActivityFeedOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
+ **optional** | ***ListsApiGetListsIdMembersIdActivityFeedOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdMembersIdActivityFeedOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdMembersIdActivityFeedOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -1082,7 +1063,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1099,12 +1080,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
- **optional** | ***GetListsIdMembersIdEventsOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
+ **optional** | ***ListsApiGetListsIdMembersIdEventsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdMembersIdEventsOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdMembersIdEventsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -1124,7 +1104,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1141,12 +1121,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
- **optional** | ***GetListsIdMembersIdGoalsOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
+ **optional** | ***ListsApiGetListsIdMembersIdGoalsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdMembersIdGoalsOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdMembersIdGoalsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -1164,7 +1143,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1181,12 +1160,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
- **optional** | ***GetListsIdMembersIdNotesOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
+ **optional** | ***ListsApiGetListsIdMembersIdNotesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdMembersIdNotesOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdMembersIdNotesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -1208,13 +1186,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetListsIdMembersIdNotesId**
-> MemberNotes GetListsIdMembersIdNotesId(ctx, listId, subscriberHash, noteId, optional)
+> MemberNotes1 GetListsIdMembersIdNotesId(ctx, listId, subscriberHash, noteId, optional)
 Get member note
 
 Get a specific note for a specific list member.
@@ -1225,13 +1203,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
   **noteId** | **string**| The id for the note. | 
- **optional** | ***GetListsIdMembersIdNotesIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdMembersIdNotesIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdMembersIdNotesIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdMembersIdNotesIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -1242,7 +1219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MemberNotes**](Member Notes.md)
+[**MemberNotes1**](Member Notes_1.md)
 
 ### Authorization
 
@@ -1250,7 +1227,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1267,11 +1244,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***GetListsIdMergeFieldsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdMergeFieldsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdMergeFieldsOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdMergeFieldsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -1280,7 +1256,7 @@ Name | Type | Description  | Notes
  **count** | **optional.Int32**| The number of records to return. Default value is 10. Maximum value is 1000 | [default to 10]
  **offset** | **optional.Int32**| Used for [pagination](https://mailchimp.com/developer/marketing/docs/methods-parameters/#pagination), this it the number of records from a collection to skip. Default value is 0. | [default to 0]
  **type_** | **optional.String**| The merge field type. | 
- **required** | **optional.Bool**| Whether it&#39;s a required merge field. | 
+ **required** | **optional.Bool**| Whether it&#x27;s a required merge field. | 
 
 ### Return type
 
@@ -1292,13 +1268,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetListsIdMergeFieldsId**
-> MergeField GetListsIdMergeFieldsId(ctx, listId, mergeId, optional)
+> MergeField1 GetListsIdMergeFieldsId(ctx, listId, mergeId, optional)
 Get merge field
 
 Get information about a specific merge field.
@@ -1310,11 +1286,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
   **mergeId** | **string**| The id for the merge field. | 
- **optional** | ***GetListsIdMergeFieldsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdMergeFieldsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdMergeFieldsIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdMergeFieldsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -1324,7 +1299,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MergeField**](Merge Field.md)
+[**MergeField1**](Merge Field_1.md)
 
 ### Authorization
 
@@ -1332,13 +1307,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetListsIdSegmentsId**
-> List7 GetListsIdSegmentsId(ctx, listId, segmentId, optional)
+> List4 GetListsIdSegmentsId(ctx, listId, segmentId, optional)
 Get segment info
 
 Get information about a specific segment.
@@ -1350,11 +1325,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
   **segmentId** | **string**| The unique id for the segment. | 
- **optional** | ***GetListsIdSegmentsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdSegmentsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdSegmentsIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdSegmentsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -1367,7 +1341,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List7**](List_7.md)
+[**List4**](List_4.md)
 
 ### Authorization
 
@@ -1375,7 +1349,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1393,11 +1367,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
   **segmentId** | **string**| The unique id for the segment. | 
- **optional** | ***GetListsIdSegmentsIdMembersOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiGetListsIdSegmentsIdMembersOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetListsIdSegmentsIdMembersOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiGetListsIdSegmentsIdMembersOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -1420,7 +1393,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1448,7 +1421,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1476,7 +1449,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1505,7 +1478,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1533,13 +1506,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetListsIdWebhooksId**
-> ListWebhooks GetListsIdWebhooksId(ctx, listId, webhookId)
+> ListWebhooks1 GetListsIdWebhooksId(ctx, listId, webhookId)
 Get webhook info
 
 Get information about a specific webhook.
@@ -1550,11 +1523,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **webhookId** | **string**| The webhook&#39;s id. | 
+  **webhookId** | **string**| The webhook&#x27;s id. | 
 
 ### Return type
 
-[**ListWebhooks**](List Webhooks.md)
+[**ListWebhooks1**](List Webhooks_1.md)
 
 ### Authorization
 
@@ -1562,13 +1535,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchListsId**
-> SubscriberList PatchListsId(ctx, listId, body)
+> SubscriberList1 PatchListsId(ctx, body, listId)
 Update lists
 
 Update the settings for a specific list.
@@ -1578,12 +1551,12 @@ Update the settings for a specific list.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **listId** | **string**| The unique ID for the list. | 
   **body** | [**SubscriberList2**](SubscriberList2.md)|  | 
+  **listId** | **string**| The unique ID for the list. | 
 
 ### Return type
 
-[**SubscriberList**](Subscriber List.md)
+[**SubscriberList1**](Subscriber List_1.md)
 
 ### Authorization
 
@@ -1597,7 +1570,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchListsIdInterestCategoriesId**
-> InterestCategory PatchListsIdInterestCategoriesId(ctx, listId, interestCategoryId, body)
+> InterestCategory1 PatchListsIdInterestCategoriesId(ctx, body, listId, interestCategoryId)
 Update interest category
 
 Update a specific interest category.
@@ -1607,13 +1580,13 @@ Update a specific interest category.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**InterestCategory2**](InterestCategory2.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
   **interestCategoryId** | **string**| The unique ID for the interest category. | 
-  **body** | [**InterestCategory2**](InterestCategory2.md)|  | 
 
 ### Return type
 
-[**InterestCategory**](Interest Category.md)
+[**InterestCategory1**](Interest Category_1.md)
 
 ### Authorization
 
@@ -1627,7 +1600,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchListsIdInterestCategoriesIdInterestsId**
-> Interest PatchListsIdInterestCategoriesIdInterestsId(ctx, listId, interestCategoryId, interestId, body)
+> Interest1 PatchListsIdInterestCategoriesIdInterestsId(ctx, body, listId, interestCategoryId, interestId)
 Update interest in category
 
 Update interests or 'group names' for a specific category.
@@ -1637,14 +1610,14 @@ Update interests or 'group names' for a specific category.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**Interest2**](Interest2.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
   **interestCategoryId** | **string**| The unique ID for the interest category. | 
-  **interestId** | **string**| The specific interest or &#39;group name&#39;. | 
-  **body** | [**Interest2**](Interest2.md)|  | 
+  **interestId** | **string**| The specific interest or &#x27;group name&#x27;. | 
 
 ### Return type
 
-[**Interest**](Interest.md)
+[**Interest1**](Interest_1.md)
 
 ### Authorization
 
@@ -1658,7 +1631,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchListsIdMembersId**
-> ListMembers2 PatchListsIdMembersId(ctx, listId, subscriberHash, body, optional)
+> ListMembers2 PatchListsIdMembersId(ctx, body, listId, subscriberHash, optional)
 Update list member
 
 Update information for a specific list member.
@@ -1668,20 +1641,19 @@ Update information for a specific list member.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
   **body** | [**AddListMembers3**](AddListMembers3.md)|  | 
- **optional** | ***PatchListsIdMembersIdOpts** | optional parameters | nil if no parameters
+  **listId** | **string**| The unique ID for the list. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
+ **optional** | ***ListsApiPatchListsIdMembersIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a PatchListsIdMembersIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiPatchListsIdMembersIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
 
- **skipMergeValidation** | **optional.Bool**| If skip_merge_validation is true, member data will be accepted without merge field values, even if the merge field is usually required. This defaults to false. | 
+ **skipMergeValidation** | **optional.**| If skip_merge_validation is true, member data will be accepted without merge field values, even if the merge field is usually required. This defaults to false. | 
 
 ### Return type
 
@@ -1699,7 +1671,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchListsIdMembersIdNotesId**
-> MemberNotes PatchListsIdMembersIdNotesId(ctx, listId, subscriberHash, noteId, body)
+> MemberNotes1 PatchListsIdMembersIdNotesId(ctx, body, listId, subscriberHash, noteId)
 Update note
 
 Update a specific note for a specific list member.
@@ -1709,14 +1681,14 @@ Update a specific note for a specific list member.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
-  **noteId** | **string**| The id for the note. | 
   **body** | [**MemberNotes2**](MemberNotes2.md)|  | 
+  **listId** | **string**| The unique ID for the list. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
+  **noteId** | **string**| The id for the note. | 
 
 ### Return type
 
-[**MemberNotes**](Member Notes.md)
+[**MemberNotes1**](Member Notes_1.md)
 
 ### Authorization
 
@@ -1730,7 +1702,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchListsIdMergeFieldsId**
-> MergeField PatchListsIdMergeFieldsId(ctx, listId, mergeId, body)
+> MergeField1 PatchListsIdMergeFieldsId(ctx, body, listId, mergeId)
 Update merge field
 
 Update a specific merge field.
@@ -1740,13 +1712,13 @@ Update a specific merge field.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**MergeField2**](MergeField2.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
   **mergeId** | **string**| The id for the merge field. | 
-  **body** | [**MergeField2**](MergeField2.md)|  | 
 
 ### Return type
 
-[**MergeField**](Merge Field.md)
+[**MergeField1**](Merge Field_1.md)
 
 ### Authorization
 
@@ -1760,7 +1732,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchListsIdSegmentsId**
-> List7 PatchListsIdSegmentsId(ctx, listId, segmentId, body)
+> List4 PatchListsIdSegmentsId(ctx, body, listId, segmentId)
 Update segment
 
 Update a specific segment in a list.
@@ -1770,13 +1742,13 @@ Update a specific segment in a list.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**List5**](List5.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
   **segmentId** | **string**| The unique id for the segment. | 
-  **body** | [**List9**](List9.md)|  | 
 
 ### Return type
 
-[**List7**](List_7.md)
+[**List4**](List_4.md)
 
 ### Authorization
 
@@ -1790,7 +1762,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchListsIdWebhooksId**
-> ListWebhooks PatchListsIdWebhooksId(ctx, listId, webhookId, body)
+> ListWebhooks1 PatchListsIdWebhooksId(ctx, body, listId, webhookId)
 Update webhook
 
 Update the settings for an existing webhook.
@@ -1800,13 +1772,13 @@ Update the settings for an existing webhook.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **listId** | **string**| The unique ID for the list. | 
-  **webhookId** | **string**| The webhook&#39;s id. | 
   **body** | [**AddWebhook1**](AddWebhook1.md)|  | 
+  **listId** | **string**| The unique ID for the list. | 
+  **webhookId** | **string**| The webhook&#x27;s id. | 
 
 ### Return type
 
-[**ListWebhooks**](List Webhooks.md)
+[**ListWebhooks1**](List Webhooks_1.md)
 
 ### Authorization
 
@@ -1820,7 +1792,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListMemberEvents**
-> PostListMemberEvents(ctx, listId, subscriberHash, body)
+> PostListMemberEvents(ctx, body, listId, subscriberHash)
 Add event
 
 Add an event for a list member.
@@ -1830,9 +1802,9 @@ Add an event for a list member.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
   **body** | [**Events**](Events.md)|  | 
+  **listId** | **string**| The unique ID for the list. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
 
 ### Return type
 
@@ -1850,7 +1822,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListMemberTags**
-> PostListMemberTags(ctx, listId, subscriberHash, body)
+> PostListMemberTags(ctx, body, listId, subscriberHash)
 Add or remove member tags
 
 Add or remove tags from a list member. If a tag that does not exist is passed in and set as 'active', a new tag will be created.
@@ -1860,9 +1832,9 @@ Add or remove tags from a list member. If a tag that does not exist is passed in
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
   **body** | [**MemberTags**](MemberTags.md)|  | 
+  **listId** | **string**| The unique ID for the list. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
 
 ### Return type
 
@@ -1880,7 +1852,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostLists**
-> SubscriberList PostLists(ctx, body)
+> SubscriberList1 PostLists(ctx, body)
 Add list
 
 Create a new list in your Mailchimp account.
@@ -1890,11 +1862,11 @@ Create a new list in your Mailchimp account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**SubscriberList1**](SubscriberList1.md)|  | 
+  **body** | [**SubscriberList**](SubscriberList.md)|  | 
 
 ### Return type
 
-[**SubscriberList**](Subscriber List.md)
+[**SubscriberList1**](Subscriber List_1.md)
 
 ### Authorization
 
@@ -1908,7 +1880,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListsId**
-> BatchUpdateListMembers PostListsId(ctx, listId, body, optional)
+> BatchUpdateListMembers PostListsId(ctx, body, listId, optional)
 Batch subscribe or unsubscribe
 
 Batch subscribe or unsubscribe list members.
@@ -1918,19 +1890,18 @@ Batch subscribe or unsubscribe list members.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **listId** | **string**| The unique ID for the list. | 
   **body** | [**MembersToSubscribeUnsubscribeTofromAListInBatch**](MembersToSubscribeUnsubscribeTofromAListInBatch.md)|  | 
- **optional** | ***PostListsIdOpts** | optional parameters | nil if no parameters
+  **listId** | **string**| The unique ID for the list. | 
+ **optional** | ***ListsApiPostListsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a PostListsIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiPostListsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **skipMergeValidation** | **optional.Bool**| If skip_merge_validation is true, member data will be accepted without merge field values, even if the merge field is usually required. This defaults to false. | 
- **skipDuplicateCheck** | **optional.Bool**| If skip_duplicate_check is true, we will ignore duplicates sent in the request when using the batch sub/unsub on the lists endpoint. The status of the first appearance in the request will be saved. This defaults to false. | 
+ **skipMergeValidation** | **optional.**| If skip_merge_validation is true, member data will be accepted without merge field values, even if the merge field is usually required. This defaults to false. | 
+ **skipDuplicateCheck** | **optional.**| If skip_duplicate_check is true, we will ignore duplicates sent in the request when using the batch sub/unsub on the lists endpoint. The status of the first appearance in the request will be saved. This defaults to false. | 
 
 ### Return type
 
@@ -1948,7 +1919,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListsIdInterestCategories**
-> InterestCategory PostListsIdInterestCategories(ctx, listId, body)
+> InterestCategory1 PostListsIdInterestCategories(ctx, body, listId)
 Add interest category
 
 Create a new interest category.
@@ -1958,12 +1929,12 @@ Create a new interest category.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**InterestCategory**](InterestCategory.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
-  **body** | [**InterestCategory1**](InterestCategory1.md)|  | 
 
 ### Return type
 
-[**InterestCategory**](Interest Category.md)
+[**InterestCategory1**](Interest Category_1.md)
 
 ### Authorization
 
@@ -1977,7 +1948,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListsIdInterestCategoriesIdInterests**
-> Interest PostListsIdInterestCategoriesIdInterests(ctx, listId, interestCategoryId, body)
+> Interest1 PostListsIdInterestCategoriesIdInterests(ctx, body, listId, interestCategoryId)
 Add interest in category
 
 Create a new interest or 'group name' for a specific category.
@@ -1987,13 +1958,13 @@ Create a new interest or 'group name' for a specific category.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**Interest**](Interest.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
   **interestCategoryId** | **string**| The unique ID for the interest category. | 
-  **body** | [**Interest1**](Interest1.md)|  | 
 
 ### Return type
 
-[**Interest**](Interest.md)
+[**Interest1**](Interest_1.md)
 
 ### Authorization
 
@@ -2007,7 +1978,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListsIdMembers**
-> ListMembers2 PostListsIdMembers(ctx, listId, body, optional)
+> ListMembers2 PostListsIdMembers(ctx, body, listId, optional)
 Add member to list
 
 Add a new member to the list.
@@ -2017,18 +1988,17 @@ Add a new member to the list.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **listId** | **string**| The unique ID for the list. | 
   **body** | [**AddListMembers1**](AddListMembers1.md)|  | 
- **optional** | ***PostListsIdMembersOpts** | optional parameters | nil if no parameters
+  **listId** | **string**| The unique ID for the list. | 
+ **optional** | ***ListsApiPostListsIdMembersOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a PostListsIdMembersOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiPostListsIdMembersOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **skipMergeValidation** | **optional.Bool**| If skip_merge_validation is true, member data will be accepted without merge field values, even if the merge field is usually required. This defaults to false. | 
+ **skipMergeValidation** | **optional.**| If skip_merge_validation is true, member data will be accepted without merge field values, even if the merge field is usually required. This defaults to false. | 
 
 ### Return type
 
@@ -2057,7 +2027,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
 
 ### Return type
 
@@ -2069,13 +2039,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListsIdMembersIdNotes**
-> MemberNotes PostListsIdMembersIdNotes(ctx, listId, subscriberHash, body)
+> MemberNotes1 PostListsIdMembersIdNotes(ctx, body, listId, subscriberHash)
 Add member note
 
 Add a new note for a specific subscriber.
@@ -2085,13 +2055,13 @@ Add a new note for a specific subscriber.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**MemberNotes**](MemberNotes.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
-  **body** | [**MemberNotes1**](MemberNotes1.md)|  | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
 
 ### Return type
 
-[**MemberNotes**](Member Notes.md)
+[**MemberNotes1**](Member Notes_1.md)
 
 ### Authorization
 
@@ -2105,7 +2075,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListsIdMergeFields**
-> MergeField PostListsIdMergeFields(ctx, listId, body)
+> MergeField1 PostListsIdMergeFields(ctx, body, listId)
 Add merge field
 
 Add a new merge field for a specific audience.
@@ -2115,12 +2085,12 @@ Add a new merge field for a specific audience.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**MergeField**](MergeField.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
-  **body** | [**MergeField1**](MergeField1.md)|  | 
 
 ### Return type
 
-[**MergeField**](Merge Field.md)
+[**MergeField1**](Merge Field_1.md)
 
 ### Authorization
 
@@ -2134,7 +2104,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListsIdSegments**
-> List7 PostListsIdSegments(ctx, listId, body)
+> List4 PostListsIdSegments(ctx, body, listId)
 Add segment
 
 Create a new segment in a specific list.
@@ -2144,12 +2114,12 @@ Create a new segment in a specific list.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**List3**](List3.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
-  **body** | [**List8**](List8.md)|  | 
 
 ### Return type
 
-[**List7**](List_7.md)
+[**List4**](List_4.md)
 
 ### Authorization
 
@@ -2193,7 +2163,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListsIdSegmentsIdMembers**
-> ListMembers1 PostListsIdSegmentsIdMembers(ctx, listId, segmentId, body)
+> ListMembers PostListsIdSegmentsIdMembers(ctx, body, listId, segmentId)
 Add member to segment
 
 Add a member to a static segment.
@@ -2203,13 +2173,13 @@ Add a member to a static segment.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**SegmentIdMembersBody**](SegmentIdMembersBody.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
   **segmentId** | **string**| The unique id for the segment. | 
-  **body** | [**Body3**](Body3.md)|  | 
 
 ### Return type
 
-[**ListMembers1**](List Members_1.md)
+[**ListMembers**](List Members.md)
 
 ### Authorization
 
@@ -2223,7 +2193,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListsIdSignupForms**
-> SignupForm PostListsIdSignupForms(ctx, listId, body)
+> SignupForm1 PostListsIdSignupForms(ctx, body, listId)
 Customize signup form
 
 Customize a list's default signup form.
@@ -2233,12 +2203,12 @@ Customize a list's default signup form.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**SignupForm**](SignupForm.md)|  | 
   **listId** | **string**| The unique ID for the list. | 
-  **body** | [**SignupForm1**](SignupForm1.md)|  | 
 
 ### Return type
 
-[**SignupForm**](Signup Form.md)
+[**SignupForm1**](Signup Form_1.md)
 
 ### Authorization
 
@@ -2252,7 +2222,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostListsIdWebhooks**
-> ListWebhooks PostListsIdWebhooks(ctx, listId, body)
+> ListWebhooks1 PostListsIdWebhooks(ctx, body, listId)
 Add webhook
 
 Create a new webhook for a specific list.
@@ -2262,12 +2232,12 @@ Create a new webhook for a specific list.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **listId** | **string**| The unique ID for the list. | 
   **body** | [**AddWebhook**](AddWebhook.md)|  | 
+  **listId** | **string**| The unique ID for the list. | 
 
 ### Return type
 
-[**ListWebhooks**](List Webhooks.md)
+[**ListWebhooks1**](List Webhooks_1.md)
 
 ### Authorization
 
@@ -2292,11 +2262,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***PreviewASegmentOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiPreviewASegmentOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a PreviewASegmentOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiPreviewASegmentOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -2323,13 +2292,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PutListsIdMembersId**
-> ListMembers2 PutListsIdMembersId(ctx, listId, subscriberHash, body, optional)
+> ListMembers2 PutListsIdMembersId(ctx, body, listId, subscriberHash, optional)
 Add or update list member
 
 Add or update a list member.
@@ -2339,20 +2308,19 @@ Add or update a list member.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **listId** | **string**| The unique ID for the list. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. This endpoint also accepts a list member&#39;s email address or contact_id. | 
   **body** | [**AddListMembers2**](AddListMembers2.md)|  | 
- **optional** | ***PutListsIdMembersIdOpts** | optional parameters | nil if no parameters
+  **listId** | **string**| The unique ID for the list. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. This endpoint also accepts a list member&#x27;s email address or contact_id. | 
+ **optional** | ***ListsApiPutListsIdMembersIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a PutListsIdMembersIdOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiPutListsIdMembersIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
 
- **skipMergeValidation** | **optional.Bool**| If skip_merge_validation is true, member data will be accepted without merge field values, even if the merge field is usually required. This defaults to false. | 
+ **skipMergeValidation** | **optional.**| If skip_merge_validation is true, member data will be accepted without merge field values, even if the merge field is usually required. This defaults to false. | 
 
 ### Return type
 
@@ -2381,11 +2349,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **listId** | **string**| The unique ID for the list. | 
- **optional** | ***SearchTagsByNameOpts** | optional parameters | nil if no parameters
+ **optional** | ***ListsApiSearchTagsByNameOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a SearchTagsByNameOpts struct
-
+Optional parameters are passed through a pointer to a ListsApiSearchTagsByNameOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -2401,7 +2368,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

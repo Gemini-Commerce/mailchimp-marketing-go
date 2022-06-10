@@ -21,9 +21,8 @@ Name | Type | Description | Notes
 **ProEnabled** | **bool** | Legacy - whether the account includes [Mailchimp Pro](https://mailchimp.com/help/about-mailchimp-pro/). | [optional] [default to null]
 **LastLogin** | [**time.Time**](time.Time.md) | The date and time of the last login for this account in ISO 8601 format. | [optional] [default to null]
 **TotalSubscribers** | **int32** | The total number of subscribers across all lists in the account. | [optional] [default to null]
-**IndustryStats** | [***IndustryStats**](Industry Stats.md) |  | [optional] [default to null]
+**IndustryStats** | [***IndustryStats1**](Industry Stats_1.md) |  | [optional] [default to null]
 **Links** | [**[]ResourceLink**](Resource Link.md) | A list of link types and descriptions for the API schema documents. | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

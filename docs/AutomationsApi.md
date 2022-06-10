@@ -1,4 +1,4 @@
-# \AutomationsApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -23,7 +23,6 @@ Method | HTTP request | Description
 [**PostAutomationsIdEmailsIdQueue**](AutomationsApi.md#PostAutomationsIdEmailsIdQueue) | **Post** /automations/{workflow_id}/emails/{workflow_email_id}/queue | Add subscriber to workflow email
 [**PostAutomationsIdRemovedSubscribers**](AutomationsApi.md#PostAutomationsIdRemovedSubscribers) | **Post** /automations/{workflow_id}/removed-subscribers | Remove subscriber from workflow
 
-
 # **ArchiveAutomations**
 > ArchiveAutomations(ctx, workflowId)
 Archive automation
@@ -47,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -76,13 +75,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetAutomations**
-> InlineResponse2003 GetAutomations(ctx, optional)
+> InlineResponse2005 GetAutomations(ctx, optional)
 List automations
 
 Get a summary of an account's classic automations.
@@ -92,11 +91,10 @@ Get a summary of an account's classic automations.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetAutomationsOpts** | optional parameters | nil if no parameters
+ **optional** | ***AutomationsApiGetAutomationsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetAutomationsOpts struct
-
+Optional parameters are passed through a pointer to a AutomationsApiGetAutomationsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **count** | **optional.Int32**| The number of records to return. Default value is 10. Maximum value is 1000 | [default to 10]
@@ -111,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](inline_response_200_3.md)
+[**InlineResponse2005**](inline_response_200_5.md)
 
 ### Authorization
 
@@ -119,13 +117,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetAutomationsId**
-> AutomationWorkflow GetAutomationsId(ctx, workflowId, optional)
+> AutomationWorkflow1 GetAutomationsId(ctx, workflowId, optional)
 Get automation info
 
 Get a summary of an individual classic automation workflow's settings and content. The `trigger_settings` object returns information for the first email in the workflow.
@@ -136,11 +134,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **workflowId** | **string**| The unique id for the Automation workflow. | 
- **optional** | ***GetAutomationsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***AutomationsApiGetAutomationsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetAutomationsIdOpts struct
-
+Optional parameters are passed through a pointer to a AutomationsApiGetAutomationsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -149,7 +146,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AutomationWorkflow**](Automation Workflow.md)
+[**AutomationWorkflow1**](Automation Workflow_1.md)
 
 ### Authorization
 
@@ -157,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -185,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -214,13 +211,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetAutomationsIdEmailsIdQueue**
-> InlineResponse2004 GetAutomationsIdEmailsIdQueue(ctx, workflowId, workflowEmailId)
+> InlineResponse2006 GetAutomationsIdEmailsIdQueue(ctx, workflowId, workflowEmailId)
 List automated email subscribers
 
 Get information about a classic automation email queue.
@@ -235,7 +232,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2004**](inline_response_200_4.md)
+[**InlineResponse2006**](inline_response_200_6.md)
 
 ### Authorization
 
@@ -243,13 +240,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetAutomationsIdEmailsIdQueueId**
-> SubscriberInAutomationQueue2 GetAutomationsIdEmailsIdQueueId(ctx, workflowId, workflowEmailId, subscriberHash)
+> SubscriberInAutomationQueue1 GetAutomationsIdEmailsIdQueueId(ctx, workflowId, workflowEmailId, subscriberHash)
 Get automated email subscriber
 
 Get information about a specific subscriber in a classic automation email queue.
@@ -261,11 +258,11 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **workflowId** | **string**| The unique id for the Automation workflow. | 
   **workflowEmailId** | **string**| The unique id for the Automation workflow email. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
 
 ### Return type
 
-[**SubscriberInAutomationQueue2**](Subscriber in Automation Queue_2.md)
+[**SubscriberInAutomationQueue1**](Subscriber in Automation Queue_1.md)
 
 ### Authorization
 
@@ -273,7 +270,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -301,7 +298,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -318,7 +315,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **workflowId** | **string**| The unique id for the Automation workflow. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
 
 ### Return type
 
@@ -330,13 +327,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchAutomationEmailWorkflowId**
-> AutomationWorkflowEmail PatchAutomationEmailWorkflowId(ctx, workflowId, workflowEmailId, body)
+> AutomationWorkflowEmail PatchAutomationEmailWorkflowId(ctx, body, workflowId, workflowEmailId)
 Update workflow email
 
 Update settings for a classic automation workflow email.  Only works with workflows of type: abandonedBrowse, abandonedCart, emailFollowup, or singleWelcome.
@@ -346,9 +343,9 @@ Update settings for a classic automation workflow email.  Only works with workfl
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**UpdateInformationAboutASpecificWorkflowEmail**](UpdateInformationAboutASpecificWorkflowEmail.md)|  | 
   **workflowId** | **string**| The unique id for the Automation workflow. | 
   **workflowEmailId** | **string**| The unique id for the Automation workflow email. | 
-  **body** | [**UpdateInformationAboutASpecificWorkflowEmail**](UpdateInformationAboutASpecificWorkflowEmail.md)|  | 
 
 ### Return type
 
@@ -366,7 +363,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostAutomations**
-> AutomationWorkflow PostAutomations(ctx, body)
+> AutomationWorkflow1 PostAutomations(ctx, body)
 Add automation
 
 Create a new classic automation in your Mailchimp account.
@@ -376,11 +373,11 @@ Create a new classic automation in your Mailchimp account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**AutomationWorkflow1**](AutomationWorkflow1.md)|  | 
+  **body** | [**AutomationWorkflow**](AutomationWorkflow.md)|  | 
 
 ### Return type
 
-[**AutomationWorkflow**](Automation Workflow.md)
+[**AutomationWorkflow1**](Automation Workflow_1.md)
 
 ### Authorization
 
@@ -416,7 +413,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -444,7 +441,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -473,7 +470,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -502,13 +499,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostAutomationsIdEmailsIdQueue**
-> SubscriberInAutomationQueue2 PostAutomationsIdEmailsIdQueue(ctx, workflowId, workflowEmailId, body)
+> SubscriberInAutomationQueue1 PostAutomationsIdEmailsIdQueue(ctx, body, workflowId, workflowEmailId)
 Add subscriber to workflow email
 
 Manually add a subscriber to a workflow, bypassing the default trigger settings. You can also use this endpoint to trigger a series of automated emails in an API 3.0 workflow type.
@@ -518,13 +515,13 @@ Manually add a subscriber to a workflow, bypassing the default trigger settings.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**SubscriberInAutomationQueue**](SubscriberInAutomationQueue.md)|  | 
   **workflowId** | **string**| The unique id for the Automation workflow. | 
   **workflowEmailId** | **string**| The unique id for the Automation workflow email. | 
-  **body** | [**SubscriberInAutomationQueue1**](SubscriberInAutomationQueue1.md)|  | 
 
 ### Return type
 
-[**SubscriberInAutomationQueue2**](Subscriber in Automation Queue_2.md)
+[**SubscriberInAutomationQueue1**](Subscriber in Automation Queue_1.md)
 
 ### Authorization
 
@@ -538,7 +535,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostAutomationsIdRemovedSubscribers**
-> SubscriberRemovedFromAutomationWorkflow PostAutomationsIdRemovedSubscribers(ctx, workflowId, body)
+> SubscriberRemovedFromAutomationWorkflow PostAutomationsIdRemovedSubscribers(ctx, body, workflowId)
 Remove subscriber from workflow
 
 Remove a subscriber from a specific classic automation workflow. You can remove a subscriber at any point in an automation workflow, regardless of how many emails they've been sent from that workflow. Once they're removed, they can never be added back to the same workflow.
@@ -548,8 +545,8 @@ Remove a subscriber from a specific classic automation workflow. You can remove 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**SubscriberInAutomationQueue2**](SubscriberInAutomationQueue2.md)|  | 
   **workflowId** | **string**| The unique id for the Automation workflow. | 
-  **body** | [**SubscriberInAutomationQueue3**](SubscriberInAutomationQueue3.md)|  | 
 
 ### Return type
 

@@ -1,4 +1,4 @@
-# \BatchesApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -8,7 +8,6 @@ Method | HTTP request | Description
 [**GetBatches**](BatchesApi.md#GetBatches) | **Get** /batches | List batch requests
 [**GetBatchesId**](BatchesApi.md#GetBatchesId) | **Get** /batches/{batch_id} | Get batch operation status
 [**PostBatches**](BatchesApi.md#PostBatches) | **Post** /batches | Start batch operation
-
 
 # **DeleteBatchesId**
 > DeleteBatchesId(ctx, batchId)
@@ -33,7 +32,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -49,11 +48,10 @@ Get a summary of batch requests that have been made.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetBatchesOpts** | optional parameters | nil if no parameters
+ **optional** | ***BatchesApiGetBatchesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetBatchesOpts struct
-
+Optional parameters are passed through a pointer to a BatchesApiGetBatchesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -71,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -88,11 +86,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **batchId** | **string**| The unique id for the batch operation. | 
- **optional** | ***GetBatchesIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***BatchesApiGetBatchesIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetBatchesIdOpts struct
-
+Optional parameters are passed through a pointer to a BatchesApiGetBatchesIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -109,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -125,7 +122,7 @@ Begin processing a batch operations request.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Body**](Body.md)|  | 
+  **body** | [**BatchesBody**](BatchesBody.md)|  | 
 
 ### Return type
 

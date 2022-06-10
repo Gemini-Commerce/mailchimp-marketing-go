@@ -1,11 +1,10 @@
-# \ActivityFeedApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**GetActivityFeedChimpChatter**](ActivityFeedApi.md#GetActivityFeedChimpChatter) | **Get** /activity-feed/chimp-chatter | Get latest chimp chatter
-
 
 # **GetActivityFeedChimpChatter**
 > InlineResponse200 GetActivityFeedChimpChatter(ctx, optional)
@@ -18,11 +17,10 @@ Return the Chimp Chatter for this account ordered by most recent.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetActivityFeedChimpChatterOpts** | optional parameters | nil if no parameters
+ **optional** | ***ActivityFeedApiGetActivityFeedChimpChatterOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetActivityFeedChimpChatterOpts struct
-
+Optional parameters are passed through a pointer to a ActivityFeedApiGetActivityFeedChimpChatterOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **count** | **optional.Int32**| The number of records to return. Default value is 10. Maximum value is 1000 | [default to 10]
@@ -38,7 +36,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

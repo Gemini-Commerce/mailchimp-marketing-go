@@ -1,4 +1,4 @@
-# \VerifiedDomainsApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -9,7 +9,6 @@ Method | HTTP request | Description
 [**GetVerifiedDomain**](VerifiedDomainsApi.md#GetVerifiedDomain) | **Get** /verified-domains/{domain_name} | Get domain info
 [**GetVerifiedDomains**](VerifiedDomainsApi.md#GetVerifiedDomains) | **Get** /verified-domains | List sending domains
 [**VerifyDomain**](VerifiedDomainsApi.md#VerifyDomain) | **Post** /verified-domains/{domain_name}/actions/verify | Verify domain
-
 
 # **CreateVerifiedDomain**
 > VerifiedDomains CreateVerifiedDomain(ctx, body)
@@ -62,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -90,7 +89,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -114,13 +113,13 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **VerifyDomain**
-> VerifiedDomains VerifyDomain(ctx, domainName, body)
+> VerifiedDomains VerifyDomain(ctx, body, domainName)
 Verify domain
 
 Verify a domain for sending.
@@ -130,8 +129,8 @@ Verify a domain for sending.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **domainName** | **string**| The domain name. | 
   **body** | [**VerifyADomainForSending_**](VerifyADomainForSending_.md)|  | 
+  **domainName** | **string**| The domain name. | 
 
 ### Return type
 

@@ -1,4 +1,4 @@
-# \ReportingApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -17,9 +17,8 @@ Method | HTTP request | Description
 [**GetReportingSurveysIdResponses**](ReportingApi.md#GetReportingSurveysIdResponses) | **Get** /reporting/surveys/{outreach_id}/responses | List survey responses
 [**GetReportingSurveysIdResponsesId**](ReportingApi.md#GetReportingSurveysIdResponsesId) | **Get** /reporting/surveys/{outreach_id}/responses/{response_id} | Get survey response
 
-
 # **GetReportingFacebookAds**
-> InlineResponse20010 GetReportingFacebookAds(ctx, optional)
+> InlineResponse20012 GetReportingFacebookAds(ctx, optional)
 List facebook ads reports
 
 Get reports of Facebook ads.
@@ -29,11 +28,10 @@ Get reports of Facebook ads.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetReportingFacebookAdsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingFacebookAdsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingFacebookAdsOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingFacebookAdsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -45,7 +43,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](inline_response_200_10.md)
+[**InlineResponse20012**](inline_response_200_12.md)
 
 ### Authorization
 
@@ -53,13 +51,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportingFacebookAdsId**
-> InlineResponse20011 GetReportingFacebookAdsId(ctx, outreachId, optional)
+> InlineResponse20013 GetReportingFacebookAdsId(ctx, outreachId, optional)
 Get facebook ad report
 
 Get report of a Facebook ad.
@@ -70,11 +68,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **outreachId** | **string**| The outreach id. | 
- **optional** | ***GetReportingFacebookAdsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingFacebookAdsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingFacebookAdsIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingFacebookAdsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -83,7 +80,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](inline_response_200_11.md)
+[**InlineResponse20013**](inline_response_200_13.md)
 
 ### Authorization
 
@@ -91,13 +88,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportingFacebookAdsIdEcommerceProductActivity**
-> InlineResponse2007 GetReportingFacebookAdsIdEcommerceProductActivity(ctx, outreachId, optional)
+> InlineResponse2009 GetReportingFacebookAdsIdEcommerceProductActivity(ctx, outreachId, optional)
 List facebook ecommerce report
 
 Get breakdown of product activity for an outreach.
@@ -108,11 +105,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **outreachId** | **string**| The outreach id. | 
- **optional** | ***GetReportingFacebookAdsIdEcommerceProductActivityOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingFacebookAdsIdEcommerceProductActivityOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingFacebookAdsIdEcommerceProductActivityOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingFacebookAdsIdEcommerceProductActivityOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -124,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](inline_response_200_7.md)
+[**InlineResponse2009**](inline_response_200_9.md)
 
 ### Authorization
 
@@ -132,13 +128,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportingLandingPages**
-> InlineResponse20012 GetReportingLandingPages(ctx, optional)
+> InlineResponse20014 GetReportingLandingPages(ctx, optional)
 List landing pages reports
 
 Get reports of landing pages.
@@ -148,11 +144,10 @@ Get reports of landing pages.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetReportingLandingPagesOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingLandingPagesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingLandingPagesOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingLandingPagesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -162,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](inline_response_200_12.md)
+[**InlineResponse20014**](inline_response_200_14.md)
 
 ### Authorization
 
@@ -170,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -187,11 +182,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **outreachId** | **string**| The outreach id. | 
- **optional** | ***GetReportingLandingPagesIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingLandingPagesIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingLandingPagesIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingLandingPagesIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -208,13 +202,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportingSurveys**
-> InlineResponse20013 GetReportingSurveys(ctx, optional)
+> InlineResponse20015 GetReportingSurveys(ctx, optional)
 List survey reports
 
 Get reports for surveys.
@@ -224,11 +218,10 @@ Get reports for surveys.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetReportingSurveysOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingSurveysOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingSurveysOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingSurveysOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -238,7 +231,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](inline_response_200_13.md)
+[**InlineResponse20015**](inline_response_200_15.md)
 
 ### Authorization
 
@@ -246,7 +239,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -263,11 +256,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **outreachId** | **string**| The outreach id. | 
- **optional** | ***GetReportingSurveysIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingSurveysIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingSurveysIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingSurveysIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -284,13 +276,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportingSurveysIdQuestions**
-> InlineResponse20014 GetReportingSurveysIdQuestions(ctx, outreachId, optional)
+> InlineResponse20016 GetReportingSurveysIdQuestions(ctx, outreachId, optional)
 List survey question reports
 
 Get reports for survey questions.
@@ -301,11 +293,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **outreachId** | **string**| The outreach id. | 
- **optional** | ***GetReportingSurveysIdQuestionsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingSurveysIdQuestionsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingSurveysIdQuestionsOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingSurveysIdQuestionsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -314,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](inline_response_200_14.md)
+[**InlineResponse20016**](inline_response_200_16.md)
 
 ### Authorization
 
@@ -322,7 +313,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -340,11 +331,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **outreachId** | **string**| The outreach id. | 
   **questionId** | **string**| The ID of the survey question. | 
- **optional** | ***GetReportingSurveysIdQuestionsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingSurveysIdQuestionsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingSurveysIdQuestionsIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingSurveysIdQuestionsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -362,13 +352,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportingSurveysIdQuestionsIdAnswers**
-> InlineResponse20015 GetReportingSurveysIdQuestionsIdAnswers(ctx, outreachId, questionId, optional)
+> InlineResponse20017 GetReportingSurveysIdQuestionsIdAnswers(ctx, outreachId, questionId, optional)
 List answers for question
 
 Get answers for a survey question.
@@ -380,11 +370,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **outreachId** | **string**| The outreach id. | 
   **questionId** | **string**| The ID of the survey question. | 
- **optional** | ***GetReportingSurveysIdQuestionsIdAnswersOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingSurveysIdQuestionsIdAnswersOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingSurveysIdQuestionsIdAnswersOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingSurveysIdQuestionsIdAnswersOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -396,7 +385,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20015**](inline_response_200_15.md)
+[**InlineResponse20017**](inline_response_200_17.md)
 
 ### Authorization
 
@@ -404,13 +393,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportingSurveysIdResponses**
-> InlineResponse20016 GetReportingSurveysIdResponses(ctx, outreachId, optional)
+> InlineResponse20018 GetReportingSurveysIdResponses(ctx, outreachId, optional)
 List survey responses
 
 Get responses to a survey.
@@ -421,11 +410,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **outreachId** | **string**| The outreach id. | 
- **optional** | ***GetReportingSurveysIdResponsesOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportingApiGetReportingSurveysIdResponsesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportingSurveysIdResponsesOpts struct
-
+Optional parameters are passed through a pointer to a ReportingApiGetReportingSurveysIdResponsesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -438,7 +426,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](inline_response_200_16.md)
+[**InlineResponse20018**](inline_response_200_18.md)
 
 ### Authorization
 
@@ -446,7 +434,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -475,7 +463,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

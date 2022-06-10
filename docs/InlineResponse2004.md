@@ -3,12 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**WorkflowId** | **string** | A string that uniquely identifies an Automation workflow. | [optional] [default to null]
-**EmailId** | **string** | A string that uniquely identifies an email in an Automation workflow. | [optional] [default to null]
-**Queue** | [**[]SubscriberInAutomationQueue**](Subscriber in Automation Queue.md) | An array of objects, each representing a subscriber queue for an email in an Automation workflow. | [optional] [default to null]
-**TotalItems** | **int32** | The total number of items matching the query regardless of pagination. | [optional] [default to null]
+**Id** | **int32** | The ID for the application. | [optional] [default to null]
+**Name** | **string** | The name of the application. | [optional] [default to null]
+**Description** | **string** | A short description of the application. | [optional] [default to null]
+**Users** | **[]string** | An array of usernames for users who have linked the app. | [optional] [default to null]
 **Links** | [**[]ResourceLink**](Resource Link.md) | A list of link types and descriptions for the API schema documents. | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

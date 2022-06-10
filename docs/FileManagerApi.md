@@ -1,4 +1,4 @@
-# \FileManagerApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -14,7 +14,6 @@ Method | HTTP request | Description
 [**PatchFileManagerFoldersId**](FileManagerApi.md#PatchFileManagerFoldersId) | **Patch** /file-manager/folders/{folder_id} | Update folder
 [**PostFileManagerFiles**](FileManagerApi.md#PostFileManagerFiles) | **Post** /file-manager/files | Add file
 [**PostFileManagerFolders**](FileManagerApi.md#PostFileManagerFolders) | **Post** /file-manager/folders | Add folder
-
 
 # **DeleteFileManagerFilesId**
 > DeleteFileManagerFilesId(ctx, fileId)
@@ -39,7 +38,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -67,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -83,11 +82,10 @@ Get a list of available images and files stored in the File Manager for the acco
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetFileManagerFilesOpts** | optional parameters | nil if no parameters
+ **optional** | ***FileManagerApiGetFileManagerFilesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetFileManagerFilesOpts struct
-
+Optional parameters are passed through a pointer to a FileManagerApiGetFileManagerFilesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -111,13 +109,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetFileManagerFilesId**
-> GalleryFile GetFileManagerFilesId(ctx, fileId, optional)
+> GalleryFile1 GetFileManagerFilesId(ctx, fileId, optional)
 Get file
 
 Get information about a specific file in the File Manager.
@@ -128,11 +126,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **fileId** | **string**| The unique id for the File Manager file. | 
- **optional** | ***GetFileManagerFilesIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***FileManagerApiGetFileManagerFilesIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetFileManagerFilesIdOpts struct
-
+Optional parameters are passed through a pointer to a FileManagerApiGetFileManagerFilesIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -141,7 +138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GalleryFile**](Gallery File.md)
+[**GalleryFile1**](Gallery File_1.md)
 
 ### Authorization
 
@@ -149,7 +146,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -165,11 +162,10 @@ Get a list of all folders in the File Manager.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetFileManagerFoldersOpts** | optional parameters | nil if no parameters
+ **optional** | ***FileManagerApiGetFileManagerFoldersOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetFileManagerFoldersOpts struct
-
+Optional parameters are passed through a pointer to a FileManagerApiGetFileManagerFoldersOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -190,13 +186,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetFileManagerFoldersId**
-> GalleryFolder GetFileManagerFoldersId(ctx, folderId, optional)
+> GalleryFolder1 GetFileManagerFoldersId(ctx, folderId, optional)
 Get folder
 
 Get information about a specific folder in the File Manager.
@@ -207,11 +203,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **folderId** | **string**| The unique id for the File Manager folder. | 
- **optional** | ***GetFileManagerFoldersIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***FileManagerApiGetFileManagerFoldersIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetFileManagerFoldersIdOpts struct
-
+Optional parameters are passed through a pointer to a FileManagerApiGetFileManagerFoldersIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -220,7 +215,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GalleryFolder**](Gallery Folder.md)
+[**GalleryFolder1**](Gallery Folder_1.md)
 
 ### Authorization
 
@@ -228,13 +223,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchFileManagerFilesId**
-> GalleryFile PatchFileManagerFilesId(ctx, fileId, body)
+> GalleryFile1 PatchFileManagerFilesId(ctx, body, fileId)
 Update file
 
 Update a file in the File Manager.
@@ -244,12 +239,12 @@ Update a file in the File Manager.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **fileId** | **string**| The unique id for the File Manager file. | 
   **body** | [**GalleryFile2**](GalleryFile2.md)|  | 
+  **fileId** | **string**| The unique id for the File Manager file. | 
 
 ### Return type
 
-[**GalleryFile**](Gallery File.md)
+[**GalleryFile1**](Gallery File_1.md)
 
 ### Authorization
 
@@ -263,7 +258,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchFileManagerFoldersId**
-> GalleryFolder PatchFileManagerFoldersId(ctx, folderId, body)
+> GalleryFolder1 PatchFileManagerFoldersId(ctx, body, folderId)
 Update folder
 
 Update a specific File Manager folder.
@@ -273,12 +268,12 @@ Update a specific File Manager folder.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **folderId** | **string**| The unique id for the File Manager folder. | 
   **body** | [**GalleryFolder2**](GalleryFolder2.md)|  | 
+  **folderId** | **string**| The unique id for the File Manager folder. | 
 
 ### Return type
 
-[**GalleryFolder**](Gallery Folder.md)
+[**GalleryFolder1**](Gallery Folder_1.md)
 
 ### Authorization
 
@@ -292,7 +287,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostFileManagerFiles**
-> GalleryFile PostFileManagerFiles(ctx, body)
+> GalleryFile1 PostFileManagerFiles(ctx, body)
 Add file
 
 Upload a new image or file to the File Manager.
@@ -302,11 +297,11 @@ Upload a new image or file to the File Manager.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**GalleryFile1**](GalleryFile1.md)|  | 
+  **body** | [**GalleryFile**](GalleryFile.md)|  | 
 
 ### Return type
 
-[**GalleryFile**](Gallery File.md)
+[**GalleryFile1**](Gallery File_1.md)
 
 ### Authorization
 
@@ -320,7 +315,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostFileManagerFolders**
-> GalleryFolder PostFileManagerFolders(ctx, body)
+> GalleryFolder1 PostFileManagerFolders(ctx, body)
 Add folder
 
 Create a new folder in the File Manager.
@@ -330,11 +325,11 @@ Create a new folder in the File Manager.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**GalleryFolder1**](GalleryFolder1.md)|  | 
+  **body** | [**GalleryFolder**](GalleryFolder.md)|  | 
 
 ### Return type
 
-[**GalleryFolder**](Gallery Folder.md)
+[**GalleryFolder1**](Gallery Folder_1.md)
 
 ### Authorization
 

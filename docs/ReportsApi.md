@@ -1,4 +1,4 @@
-# \ReportsApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -27,7 +27,6 @@ Method | HTTP request | Description
 [**GetReportsIdUnsubscribed**](ReportsApi.md#GetReportsIdUnsubscribed) | **Get** /reports/{campaign_id}/unsubscribed | List unsubscribed members
 [**GetReportsIdUnsubscribedId**](ReportsApi.md#GetReportsIdUnsubscribedId) | **Get** /reports/{campaign_id}/unsubscribed/{subscriber_hash} | Get unsubscribed member
 
-
 # **GetReports**
 > CampaignReports1 GetReports(ctx, optional)
 List campaign reports
@@ -39,11 +38,10 @@ Get campaign reports.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetReportsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -64,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -81,11 +79,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -102,7 +99,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -119,11 +116,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdAbuseReportsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdAbuseReportsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdAbuseReportsIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdAbuseReportsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -140,7 +136,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -158,11 +154,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
   **reportId** | **string**| The id for the abuse report. | 
- **optional** | ***GetReportsIdAbuseReportsIdIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdAbuseReportsIdIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdAbuseReportsIdIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdAbuseReportsIdIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -180,7 +175,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -197,11 +192,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdAdviceOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdAdviceOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdAdviceOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdAdviceOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -218,7 +212,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -235,11 +229,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdClickDetailsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdClickDetailsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdClickDetailsOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdClickDetailsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -258,13 +251,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportsIdClickDetailsId**
-> ClickDetailReport GetReportsIdClickDetailsId(ctx, campaignId, linkId, optional)
+> ClickDetailReport1 GetReportsIdClickDetailsId(ctx, campaignId, linkId, optional)
 Get campaign link details
 
 Get click details for a specific link in a campaign.
@@ -276,11 +269,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
   **linkId** | **string**| The id for the link. | 
- **optional** | ***GetReportsIdClickDetailsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdClickDetailsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdClickDetailsIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdClickDetailsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -290,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ClickDetailReport**](Click Detail Report.md)
+[**ClickDetailReport1**](Click Detail Report_1.md)
 
 ### Authorization
 
@@ -298,7 +290,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -316,11 +308,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
   **linkId** | **string**| The id for the link. | 
- **optional** | ***GetReportsIdClickDetailsIdMembersOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdClickDetailsIdMembersOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdClickDetailsIdMembersOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdClickDetailsIdMembersOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -340,7 +331,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -358,12 +349,11 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
   **linkId** | **string**| The id for the link. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
- **optional** | ***GetReportsIdClickDetailsIdMembersIdOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
+ **optional** | ***ReportsApiGetReportsIdClickDetailsIdMembersIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdClickDetailsIdMembersIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdClickDetailsIdMembersIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -382,7 +372,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -399,11 +389,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdDomainPerformanceOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdDomainPerformanceOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdDomainPerformanceOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdDomainPerformanceOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -420,13 +409,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportsIdEcommerceProductActivity**
-> InlineResponse2007 GetReportsIdEcommerceProductActivity(ctx, campaignId, optional)
+> InlineResponse2009 GetReportsIdEcommerceProductActivity(ctx, campaignId, optional)
 List campaign product activity
 
 Get breakdown of product activity for a campaign
@@ -437,11 +426,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdEcommerceProductActivityOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdEcommerceProductActivityOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdEcommerceProductActivityOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdEcommerceProductActivityOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -453,7 +441,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](inline_response_200_7.md)
+[**InlineResponse2009**](inline_response_200_9.md)
 
 ### Authorization
 
@@ -461,7 +449,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -478,11 +466,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdEepurlOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdEepurlOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdEepurlOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdEepurlOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -499,7 +486,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -516,11 +503,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdEmailActivityOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdEmailActivityOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdEmailActivityOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdEmailActivityOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -540,13 +526,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportsIdEmailActivityId**
-> EmailActivity GetReportsIdEmailActivityId(ctx, campaignId, subscriberHash, optional)
+> EmailActivity1 GetReportsIdEmailActivityId(ctx, campaignId, subscriberHash, optional)
 Get subscriber email activity
 
 Get a specific list member's activity in a campaign including opens, clicks, and bounces.
@@ -557,12 +543,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
- **optional** | ***GetReportsIdEmailActivityIdOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
+ **optional** | ***ReportsApiGetReportsIdEmailActivityIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdEmailActivityIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdEmailActivityIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -573,7 +558,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**EmailActivity**](Email Activity.md)
+[**EmailActivity1**](Email Activity_1.md)
 
 ### Authorization
 
@@ -581,7 +566,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -598,11 +583,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdLocationsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdLocationsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdLocationsOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdLocationsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -621,7 +605,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -638,11 +622,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdOpenDetailsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdOpenDetailsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdOpenDetailsOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdOpenDetailsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -662,7 +645,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -679,12 +662,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
- **optional** | ***GetReportsIdOpenDetailsIdMembersIdOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
+ **optional** | ***ReportsApiGetReportsIdOpenDetailsIdMembersIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdOpenDetailsIdMembersIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdOpenDetailsIdMembersIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -702,7 +684,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -719,11 +701,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdSentToOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdSentToOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdSentToOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdSentToOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -742,7 +723,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -759,12 +740,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
- **optional** | ***GetReportsIdSentToIdOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
+ **optional** | ***ReportsApiGetReportsIdSentToIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdSentToIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdSentToIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -782,7 +762,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -799,11 +779,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdSubReportsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdSubReportsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdSubReportsIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdSubReportsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -820,7 +799,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -837,11 +816,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetReportsIdUnsubscribedOpts** | optional parameters | nil if no parameters
+ **optional** | ***ReportsApiGetReportsIdUnsubscribedOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdUnsubscribedOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdUnsubscribedOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -860,13 +838,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetReportsIdUnsubscribedId**
-> Unsubscribes GetReportsIdUnsubscribedId(ctx, campaignId, subscriberHash, optional)
+> Unsubscribes1 GetReportsIdUnsubscribedId(ctx, campaignId, subscriberHash, optional)
 Get unsubscribed member
 
 Get information about a specific list member who unsubscribed from a campaign.
@@ -877,12 +855,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
-  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#39;s email address. | 
- **optional** | ***GetReportsIdUnsubscribedIdOpts** | optional parameters | nil if no parameters
+  **subscriberHash** | **string**| The MD5 hash of the lowercase version of the list member&#x27;s email address. | 
+ **optional** | ***ReportsApiGetReportsIdUnsubscribedIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetReportsIdUnsubscribedIdOpts struct
-
+Optional parameters are passed through a pointer to a ReportsApiGetReportsIdUnsubscribedIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -892,7 +869,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Unsubscribes**](Unsubscribes.md)
+[**Unsubscribes1**](Unsubscribes_1.md)
 
 ### Authorization
 
@@ -900,7 +877,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

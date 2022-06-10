@@ -1,4 +1,4 @@
-# \AuthorizedAppsApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -7,9 +7,8 @@ Method | HTTP request | Description
 [**GetAuthorizedApps**](AuthorizedAppsApi.md#GetAuthorizedApps) | **Get** /authorized-apps | List authorized apps
 [**GetAuthorizedAppsId**](AuthorizedAppsApi.md#GetAuthorizedAppsId) | **Get** /authorized-apps/{app_id} | Get authorized app info
 
-
 # **GetAuthorizedApps**
-> InlineResponse2002 GetAuthorizedApps(ctx, optional)
+> InlineResponse2003 GetAuthorizedApps(ctx, optional)
 List authorized apps
 
 Get a list of an account's registered, connected applications.
@@ -19,11 +18,10 @@ Get a list of an account's registered, connected applications.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetAuthorizedAppsOpts** | optional parameters | nil if no parameters
+ **optional** | ***AuthorizedAppsApiGetAuthorizedAppsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetAuthorizedAppsOpts struct
-
+Optional parameters are passed through a pointer to a AuthorizedAppsApiGetAuthorizedAppsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -33,7 +31,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](inline_response_200_2.md)
+[**InlineResponse2003**](inline_response_200_3.md)
 
 ### Authorization
 
@@ -41,13 +39,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetAuthorizedAppsId**
-> InlineResponse2002Apps GetAuthorizedAppsId(ctx, appId, optional)
+> InlineResponse2004 GetAuthorizedAppsId(ctx, appId, optional)
 Get authorized app info
 
 Get information about a specific authorized application.
@@ -58,11 +56,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **appId** | **string**| The unique id for the connected authorized application. | 
- **optional** | ***GetAuthorizedAppsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***AuthorizedAppsApiGetAuthorizedAppsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetAuthorizedAppsIdOpts struct
-
+Optional parameters are passed through a pointer to a AuthorizedAppsApiGetAuthorizedAppsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -71,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002Apps**](inline_response_200_2_apps.md)
+[**InlineResponse2004**](inline_response_200_4.md)
 
 ### Authorization
 
@@ -79,7 +76,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

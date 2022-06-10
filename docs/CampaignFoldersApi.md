@@ -1,4 +1,4 @@
-# \CampaignFoldersApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -9,7 +9,6 @@ Method | HTTP request | Description
 [**GetCampaignFoldersId**](CampaignFoldersApi.md#GetCampaignFoldersId) | **Get** /campaign-folders/{folder_id} | Get campaign folder
 [**PatchCampaignFoldersId**](CampaignFoldersApi.md#PatchCampaignFoldersId) | **Patch** /campaign-folders/{folder_id} | Update campaign folder
 [**PostCampaignFolders**](CampaignFoldersApi.md#PostCampaignFolders) | **Post** /campaign-folders | Add campaign folder
-
 
 # **DeleteCampaignFoldersId**
 > DeleteCampaignFoldersId(ctx, folderId)
@@ -34,7 +33,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -50,11 +49,10 @@ Get all folders used to organize campaigns.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetCampaignFoldersOpts** | optional parameters | nil if no parameters
+ **optional** | ***CampaignFoldersApiGetCampaignFoldersOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetCampaignFoldersOpts struct
-
+Optional parameters are passed through a pointer to a CampaignFoldersApiGetCampaignFoldersOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -72,13 +70,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetCampaignFoldersId**
-> CampaignFolder GetCampaignFoldersId(ctx, folderId, optional)
+> CampaignFolder1 GetCampaignFoldersId(ctx, folderId, optional)
 Get campaign folder
 
 Get information about a specific folder used to organize campaigns.
@@ -89,11 +87,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **folderId** | **string**| The unique id for the campaign folder. | 
- **optional** | ***GetCampaignFoldersIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***CampaignFoldersApiGetCampaignFoldersIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetCampaignFoldersIdOpts struct
-
+Optional parameters are passed through a pointer to a CampaignFoldersApiGetCampaignFoldersIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -102,7 +99,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CampaignFolder**](Campaign Folder.md)
+[**CampaignFolder1**](Campaign Folder_1.md)
 
 ### Authorization
 
@@ -110,13 +107,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchCampaignFoldersId**
-> CampaignFolder PatchCampaignFoldersId(ctx, folderId, body)
+> CampaignFolder1 PatchCampaignFoldersId(ctx, body, folderId)
 Update campaign folder
 
 Update a specific folder used to organize campaigns.
@@ -126,12 +123,12 @@ Update a specific folder used to organize campaigns.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **folderId** | **string**| The unique id for the campaign folder. | 
   **body** | [**CampaignFolder2**](CampaignFolder2.md)|  | 
+  **folderId** | **string**| The unique id for the campaign folder. | 
 
 ### Return type
 
-[**CampaignFolder**](Campaign Folder.md)
+[**CampaignFolder1**](Campaign Folder_1.md)
 
 ### Authorization
 
@@ -145,7 +142,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostCampaignFolders**
-> CampaignFolder PostCampaignFolders(ctx, body)
+> CampaignFolder1 PostCampaignFolders(ctx, body)
 Add campaign folder
 
 Create a new campaign folder.
@@ -155,11 +152,11 @@ Create a new campaign folder.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**CampaignFolder1**](CampaignFolder1.md)|  | 
+  **body** | [**CampaignFolder**](CampaignFolder.md)|  | 
 
 ### Return type
 
-[**CampaignFolder**](Campaign Folder.md)
+[**CampaignFolder1**](Campaign Folder_1.md)
 
 ### Authorization
 

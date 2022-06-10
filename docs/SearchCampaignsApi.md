@@ -1,11 +1,10 @@
-# \SearchCampaignsApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**GetSearchCampaigns**](SearchCampaignsApi.md#GetSearchCampaigns) | **Get** /search-campaigns | Search campaigns
-
 
 # **GetSearchCampaigns**
 > Campaigns GetSearchCampaigns(ctx, query, optional)
@@ -19,11 +18,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **query** | **string**| The search query used to filter results. | 
- **optional** | ***GetSearchCampaignsOpts** | optional parameters | nil if no parameters
+ **optional** | ***SearchCampaignsApiGetSearchCampaignsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetSearchCampaignsOpts struct
-
+Optional parameters are passed through a pointer to a SearchCampaignsApiGetSearchCampaignsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -40,7 +38,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -1,4 +1,4 @@
-# \ConnectedSitesApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -9,7 +9,6 @@ Method | HTTP request | Description
 [**GetConnectedSitesId**](ConnectedSitesApi.md#GetConnectedSitesId) | **Get** /connected-sites/{connected_site_id} | Get connected site
 [**PostConnectedSites**](ConnectedSitesApi.md#PostConnectedSites) | **Post** /connected-sites | Add connected site
 [**PostConnectedSitesIdActionsVerifyScriptInstallation**](ConnectedSitesApi.md#PostConnectedSitesIdActionsVerifyScriptInstallation) | **Post** /connected-sites/{connected_site_id}/actions/verify-script-installation | Verify connected site script
-
 
 # **DeleteConnectedSitesId**
 > DeleteConnectedSitesId(ctx, connectedSiteId)
@@ -34,7 +33,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -50,11 +49,10 @@ Get all connected sites in an account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetConnectedSitesOpts** | optional parameters | nil if no parameters
+ **optional** | ***ConnectedSitesApiGetConnectedSitesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetConnectedSitesOpts struct
-
+Optional parameters are passed through a pointer to a ConnectedSitesApiGetConnectedSitesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -72,13 +70,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetConnectedSitesId**
-> ConnectedSite GetConnectedSitesId(ctx, connectedSiteId, optional)
+> ConnectedSite1 GetConnectedSitesId(ctx, connectedSiteId, optional)
 Get connected site
 
 Get information about a specific connected site.
@@ -89,11 +87,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **connectedSiteId** | **string**| The unique identifier for the site. | 
- **optional** | ***GetConnectedSitesIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ConnectedSitesApiGetConnectedSitesIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetConnectedSitesIdOpts struct
-
+Optional parameters are passed through a pointer to a ConnectedSitesApiGetConnectedSitesIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -102,7 +99,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ConnectedSite**](Connected Site.md)
+[**ConnectedSite1**](Connected Site_1.md)
 
 ### Authorization
 
@@ -110,13 +107,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostConnectedSites**
-> ConnectedSite PostConnectedSites(ctx, body)
+> ConnectedSite1 PostConnectedSites(ctx, body)
 Add connected site
 
 Create a new Mailchimp connected site.
@@ -126,11 +123,11 @@ Create a new Mailchimp connected site.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**ConnectedSite1**](ConnectedSite1.md)|  | 
+  **body** | [**ConnectedSite**](ConnectedSite.md)|  | 
 
 ### Return type
 
-[**ConnectedSite**](Connected Site.md)
+[**ConnectedSite1**](Connected Site_1.md)
 
 ### Authorization
 
@@ -166,7 +163,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

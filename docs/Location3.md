@@ -3,9 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Country** | **string** | The two-digit country code for a recorded click. | [optional] [default to null]
-**Region** | **string** | If available, a specific region where the click was recorded. | [optional] [default to null]
+**Latitude** | **float64** | The location latitude. | [optional] [default to null]
+**Longitude** | **float64** | The location longitude. | [optional] [default to null]
+**Gmtoff** | **int32** | The time difference in hours from GMT. | [optional] [default to null]
+**Dstoff** | **int32** | The offset for timezones where daylight saving time is observed. | [optional] [default to null]
+**CountryCode** | **string** | The unique code for the location country. | [optional] [default to null]
+**Timezone** | **string** | The timezone for the location. | [optional] [default to null]
+**Region** | **string** | The region for the location. | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

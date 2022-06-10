@@ -4,16 +4,20 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Links** | [**[]ResourceLink**](Resource Link.md) | A list of link types and descriptions for the API schema documents. | [optional] [default to null]
-**Audience** | [***InlineResponse2009Audience**](inline_response_200_9_audience.md) |  | [optional] [default to null]
-**AudienceActivity** | [***InlineResponse20011AudienceActivity**](inline_response_200_11_audience_activity.md) |  | [optional] [default to null]
-**Budget** | [***InlineResponse2009Budget**](inline_response_200_9_budget.md) |  | [optional] [default to null]
+**Audience** | [***InlineResponse20011Audience**](inline_response_200_11_audience.md) |  | [optional] [default to null]
+**Budget** | [***InlineResponse20011Budget**](inline_response_200_11_budget.md) |  | [optional] [default to null]
 **CanceledAt** | [**time.Time**](time.Time.md) |  | [optional] [default to null]
-**Channel** | [***InlineResponse2009Channel**](inline_response_200_9_channel.md) |  | [optional] [default to null]
+**Channel** | [***InlineResponse20011Channel**](inline_response_200_11_channel.md) |  | [optional] [default to null]
+**Content** | [***InlineResponse20011Content**](inline_response_200_11_content.md) |  | [optional] [default to null]
 **CreateTime** | [**time.Time**](time.Time.md) |  | [optional] [default to null]
 **EmailSourceName** | **string** |  | [optional] [default to null]
 **EndTime** | [**time.Time**](time.Time.md) |  | [optional] [default to null]
+**Feedback** | [***InlineResponse20011Feedback**](inline_response_200_11_feedback.md) |  | [optional] [default to null]
+**HasAudience** | **bool** | Check if this ad has audience setup | [optional] [default to null]
+**HasContent** | **bool** | Check if this ad has content | [optional] [default to null]
 **HasSegment** | **bool** |  | [optional] [default to null]
 **Id** | **string** | Unique ID of an Outreach | [optional] [default to null]
+**IsConnected** | **bool** | Check if this ad is connected to a facebook page | [optional] [default to null]
 **Name** | **string** | Title or name of an Outreach | [optional] [default to null]
 **NeedsAttention** | **bool** |  | [optional] [default to null]
 **PausedAt** | [**time.Time**](time.Time.md) |  | [optional] [default to null]
@@ -21,6 +25,7 @@ Name | Type | Description | Notes
 **Recipients** | [***List10**](List_10.md) |  | [optional] [default to null]
 **ReportSummary** | [***InlineResponse20011ReportSummary**](inline_response_200_11_report_summary.md) |  | [optional] [default to null]
 **ShowReport** | **bool** | Outreach report availability | [optional] [default to null]
+**Site** | [***InlineResponse20011Site**](inline_response_200_11_site.md) |  | [optional] [default to null]
 **StartTime** | [**time.Time**](time.Time.md) |  | [optional] [default to null]
 **Status** | **string** | Campaign, Ad, or Page status | [optional] [default to null]
 **Thumbnail** | **string** | The URL of the thumbnail for this outreach | [optional] [default to null]
@@ -30,5 +35,4 @@ Name | Type | Description | Notes
 **WebId** | **int32** | Web ID | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

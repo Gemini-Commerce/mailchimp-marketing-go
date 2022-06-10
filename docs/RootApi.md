@@ -1,11 +1,10 @@
-# \RootApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**GetRoot**](RootApi.md#GetRoot) | **Get** / | List api root resources
-
 
 # **GetRoot**
 > ApiRoot GetRoot(ctx, optional)
@@ -18,11 +17,10 @@ Get links to all other resources available in the API.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetRootOpts** | optional parameters | nil if no parameters
+ **optional** | ***RootApiGetRootOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetRootOpts struct
-
+Optional parameters are passed through a pointer to a RootApiGetRootOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -38,7 +36,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

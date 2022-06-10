@@ -1,4 +1,4 @@
-# \FacebookAdsApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -7,9 +7,8 @@ Method | HTTP request | Description
 [**GetAllFacebookAds**](FacebookAdsApi.md#GetAllFacebookAds) | **Get** /facebook-ads | List facebook ads
 [**GetFacebookAdsId**](FacebookAdsApi.md#GetFacebookAdsId) | **Get** /facebook-ads/{outreach_id} | Get facebook ad info
 
-
 # **GetAllFacebookAds**
-> InlineResponse2008 GetAllFacebookAds(ctx, optional)
+> InlineResponse20010 GetAllFacebookAds(ctx, optional)
 List facebook ads
 
 Get list of Facebook ads.
@@ -19,11 +18,10 @@ Get list of Facebook ads.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetAllFacebookAdsOpts** | optional parameters | nil if no parameters
+ **optional** | ***FacebookAdsApiGetAllFacebookAdsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetAllFacebookAdsOpts struct
-
+Optional parameters are passed through a pointer to a FacebookAdsApiGetAllFacebookAdsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -35,7 +33,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](inline_response_200_8.md)
+[**InlineResponse20010**](inline_response_200_10.md)
 
 ### Authorization
 
@@ -43,13 +41,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetFacebookAdsId**
-> InlineResponse2009 GetFacebookAdsId(ctx, outreachId, optional)
+> InlineResponse20011 GetFacebookAdsId(ctx, outreachId, optional)
 Get facebook ad info
 
 Get details of a Facebook ad.
@@ -60,11 +58,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **outreachId** | **string**| The outreach id. | 
- **optional** | ***GetFacebookAdsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***FacebookAdsApiGetFacebookAdsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetFacebookAdsIdOpts struct
-
+Optional parameters are passed through a pointer to a FacebookAdsApiGetFacebookAdsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -73,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](inline_response_200_9.md)
+[**InlineResponse20011**](inline_response_200_11.md)
 
 ### Authorization
 
@@ -81,7 +78,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

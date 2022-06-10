@@ -1,4 +1,4 @@
-# \SurveysApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -6,7 +6,6 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**PostListsIdSurveysIdActionsPublish**](SurveysApi.md#PostListsIdSurveysIdActionsPublish) | **Post** /lists/{list_id}/surveys/{survey_id}/actions/publish | Publish a Survey
 [**PostListsIdSurveysIdActionsUnpublish**](SurveysApi.md#PostListsIdSurveysIdActionsUnpublish) | **Post** /lists/{list_id}/surveys/{survey_id}/actions/unpublish | Unpublish a Survey
-
 
 # **PostListsIdSurveysIdActionsPublish**
 > PostListsIdSurveysIdActionsPublish(ctx, listId, surveyId)
@@ -32,7 +31,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -61,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -1,4 +1,4 @@
-# \TemplatesApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -10,7 +10,6 @@ Method | HTTP request | Description
 [**GetTemplatesIdDefaultContent**](TemplatesApi.md#GetTemplatesIdDefaultContent) | **Get** /templates/{template_id}/default-content | View default content
 [**PatchTemplatesId**](TemplatesApi.md#PatchTemplatesId) | **Patch** /templates/{template_id} | Update template
 [**PostTemplates**](TemplatesApi.md#PostTemplates) | **Post** /templates | Add template
-
 
 # **DeleteTemplatesId**
 > DeleteTemplatesId(ctx, templateId)
@@ -35,7 +34,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -51,11 +50,10 @@ Get a list of an account's available templates.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetTemplatesOpts** | optional parameters | nil if no parameters
+ **optional** | ***TemplatesApiGetTemplatesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetTemplatesOpts struct
-
+Optional parameters are passed through a pointer to a TemplatesApiGetTemplatesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -81,13 +79,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetTemplatesId**
-> TemplateInstance GetTemplatesId(ctx, templateId, optional)
+> TemplateInstance1 GetTemplatesId(ctx, templateId, optional)
 Get template info
 
 Get information about a specific template.
@@ -98,11 +96,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **templateId** | **string**| The unique id for the template. | 
- **optional** | ***GetTemplatesIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***TemplatesApiGetTemplatesIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetTemplatesIdOpts struct
-
+Optional parameters are passed through a pointer to a TemplatesApiGetTemplatesIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -111,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TemplateInstance**](Template Instance.md)
+[**TemplateInstance1**](Template Instance_1.md)
 
 ### Authorization
 
@@ -119,7 +116,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -136,11 +133,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **templateId** | **string**| The unique id for the template. | 
- **optional** | ***GetTemplatesIdDefaultContentOpts** | optional parameters | nil if no parameters
+ **optional** | ***TemplatesApiGetTemplatesIdDefaultContentOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetTemplatesIdDefaultContentOpts struct
-
+Optional parameters are passed through a pointer to a TemplatesApiGetTemplatesIdDefaultContentOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -157,13 +153,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchTemplatesId**
-> TemplateInstance PatchTemplatesId(ctx, templateId, body)
+> TemplateInstance1 PatchTemplatesId(ctx, body, templateId)
 Update template
 
 Update the name, HTML, or `folder_id` of an existing template.
@@ -173,12 +169,12 @@ Update the name, HTML, or `folder_id` of an existing template.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **templateId** | **string**| The unique id for the template. | 
   **body** | [**TemplateInstance2**](TemplateInstance2.md)|  | 
+  **templateId** | **string**| The unique id for the template. | 
 
 ### Return type
 
-[**TemplateInstance**](Template Instance.md)
+[**TemplateInstance1**](Template Instance_1.md)
 
 ### Authorization
 
@@ -192,7 +188,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostTemplates**
-> TemplateInstance PostTemplates(ctx, body)
+> TemplateInstance1 PostTemplates(ctx, body)
 Add template
 
 Create a new template for the account. Only Classic templates are supported.
@@ -202,11 +198,11 @@ Create a new template for the account. Only Classic templates are supported.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**TemplateInstance1**](TemplateInstance1.md)|  | 
+  **body** | [**TemplateInstance**](TemplateInstance.md)|  | 
 
 ### Return type
 
-[**TemplateInstance**](Template Instance.md)
+[**TemplateInstance1**](Template Instance_1.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# \LandingPagesApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -12,7 +12,6 @@ Method | HTTP request | Description
 [**PostAllLandingPages**](LandingPagesApi.md#PostAllLandingPages) | **Post** /landing-pages | Add landing page
 [**PostLandingPageIdActionsPublish**](LandingPagesApi.md#PostLandingPageIdActionsPublish) | **Post** /landing-pages/{page_id}/actions/publish | Publish landing page
 [**PostLandingPageIdActionsUnpublish**](LandingPagesApi.md#PostLandingPageIdActionsUnpublish) | **Post** /landing-pages/{page_id}/actions/unpublish | Unpublish landing page
-
 
 # **DeleteLandingPageId**
 > DeleteLandingPageId(ctx, pageId)
@@ -37,13 +36,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetAllLandingPages**
-> InlineResponse2006 GetAllLandingPages(ctx, optional)
+> InlineResponse2008 GetAllLandingPages(ctx, optional)
 List landing pages
 
 Get all landing pages.
@@ -53,11 +52,10 @@ Get all landing pages.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetAllLandingPagesOpts** | optional parameters | nil if no parameters
+ **optional** | ***LandingPagesApiGetAllLandingPagesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetAllLandingPagesOpts struct
-
+Optional parameters are passed through a pointer to a LandingPagesApiGetAllLandingPagesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sortDir** | **optional.String**| Determines the order direction for sorted results. | 
@@ -68,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2006**](inline_response_200_6.md)
+[**InlineResponse2008**](inline_response_200_8.md)
 
 ### Authorization
 
@@ -76,13 +74,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetLandingPageId**
-> LandingPage GetLandingPageId(ctx, pageId, optional)
+> LandingPage1 GetLandingPageId(ctx, pageId, optional)
 Get landing page info
 
 Get information about a specific page.
@@ -93,11 +91,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **pageId** | **string**| The unique id for the page. | 
- **optional** | ***GetLandingPageIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***LandingPagesApiGetLandingPageIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetLandingPageIdOpts struct
-
+Optional parameters are passed through a pointer to a LandingPagesApiGetLandingPageIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -106,7 +103,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**LandingPage**](Landing Page.md)
+[**LandingPage1**](Landing Page_1.md)
 
 ### Authorization
 
@@ -114,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -131,11 +128,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **pageId** | **string**| The unique id for the page. | 
- **optional** | ***GetLandingPageIdContentOpts** | optional parameters | nil if no parameters
+ **optional** | ***LandingPagesApiGetLandingPageIdContentOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetLandingPageIdContentOpts struct
-
+Optional parameters are passed through a pointer to a LandingPagesApiGetLandingPageIdContentOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -152,13 +148,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchLandingPageId**
-> LandingPage PatchLandingPageId(ctx, pageId, body)
+> LandingPage1 PatchLandingPageId(ctx, body, pageId)
 Update landing page
 
 Update a landing page.
@@ -168,12 +164,12 @@ Update a landing page.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **pageId** | **string**| The unique id for the page. | 
   **body** | [**LandingPage2**](LandingPage2.md)|  | 
+  **pageId** | **string**| The unique id for the page. | 
 
 ### Return type
 
-[**LandingPage**](Landing Page.md)
+[**LandingPage1**](Landing Page_1.md)
 
 ### Authorization
 
@@ -187,7 +183,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostAllLandingPages**
-> LandingPage PostAllLandingPages(ctx, body, optional)
+> LandingPage1 PostAllLandingPages(ctx, body, optional)
 Add landing page
 
 Create a new Mailchimp landing page.
@@ -197,20 +193,19 @@ Create a new Mailchimp landing page.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**LandingPage1**](LandingPage1.md)|  | 
- **optional** | ***PostAllLandingPagesOpts** | optional parameters | nil if no parameters
+  **body** | [**LandingPage**](LandingPage.md)|  | 
+ **optional** | ***LandingPagesApiPostAllLandingPagesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a PostAllLandingPagesOpts struct
-
+Optional parameters are passed through a pointer to a LandingPagesApiPostAllLandingPagesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **useDefaultList** | **optional.Bool**| Will create the Landing Page using the account&#39;s Default List instead of requiring a list_id. | 
+ **useDefaultList** | **optional.**| Will create the Landing Page using the account&#x27;s Default List instead of requiring a list_id. | 
 
 ### Return type
 
-[**LandingPage**](Landing Page.md)
+[**LandingPage1**](Landing Page_1.md)
 
 ### Authorization
 
@@ -224,7 +219,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostLandingPageIdActionsPublish**
-> LandingPage PostLandingPageIdActionsPublish(ctx, pageId)
+> LandingPage1 PostLandingPageIdActionsPublish(ctx, pageId)
 Publish landing page
 
 Publish a landing page that is in draft, unpublished, or has been previously published and edited.
@@ -238,7 +233,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**LandingPage**](Landing Page.md)
+[**LandingPage1**](Landing Page_1.md)
 
 ### Authorization
 
@@ -246,7 +241,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -274,7 +269,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

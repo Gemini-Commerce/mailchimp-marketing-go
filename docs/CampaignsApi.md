@@ -1,4 +1,4 @@
-# \CampaignsApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -27,7 +27,6 @@ Method | HTTP request | Description
 [**PostCampaignsIdFeedback**](CampaignsApi.md#PostCampaignsIdFeedback) | **Post** /campaigns/{campaign_id}/feedback | Add campaign feedback
 [**PutCampaignsIdContent**](CampaignsApi.md#PutCampaignsIdContent) | **Put** /campaigns/{campaign_id}/content | Set campaign content
 
-
 # **DeleteCampaignsId**
 > DeleteCampaignsId(ctx, campaignId)
 Delete campaign
@@ -51,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -80,13 +79,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetCampaigns**
-> InlineResponse2005 GetCampaigns(ctx, optional)
+> InlineResponse2007 GetCampaigns(ctx, optional)
 List campaigns
 
 Get all campaigns in an account.
@@ -96,11 +95,10 @@ Get all campaigns in an account.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetCampaignsOpts** | optional parameters | nil if no parameters
+ **optional** | ***CampaignsApiGetCampaignsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetCampaignsOpts struct
-
+Optional parameters are passed through a pointer to a CampaignsApiGetCampaignsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -121,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](inline_response_200_5.md)
+[**InlineResponse2007**](inline_response_200_7.md)
 
 ### Authorization
 
@@ -129,13 +127,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetCampaignsId**
-> Campaign GetCampaignsId(ctx, campaignId, optional)
+> Campaign1 GetCampaignsId(ctx, campaignId, optional)
 Get campaign info
 
 Get information about a specific campaign.
@@ -146,11 +144,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetCampaignsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***CampaignsApiGetCampaignsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetCampaignsIdOpts struct
-
+Optional parameters are passed through a pointer to a CampaignsApiGetCampaignsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -159,7 +156,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Campaign**](Campaign.md)
+[**Campaign1**](Campaign_1.md)
 
 ### Authorization
 
@@ -167,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -184,11 +181,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetCampaignsIdContentOpts** | optional parameters | nil if no parameters
+ **optional** | ***CampaignsApiGetCampaignsIdContentOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetCampaignsIdContentOpts struct
-
+Optional parameters are passed through a pointer to a CampaignsApiGetCampaignsIdContentOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -205,7 +201,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -222,11 +218,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetCampaignsIdFeedbackOpts** | optional parameters | nil if no parameters
+ **optional** | ***CampaignsApiGetCampaignsIdFeedbackOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetCampaignsIdFeedbackOpts struct
-
+Optional parameters are passed through a pointer to a CampaignsApiGetCampaignsIdFeedbackOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -243,13 +238,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetCampaignsIdFeedbackId**
-> CampaignFeedback2 GetCampaignsIdFeedbackId(ctx, campaignId, feedbackId, optional)
+> CampaignFeedback1 GetCampaignsIdFeedbackId(ctx, campaignId, feedbackId, optional)
 Get campaign feedback message
 
 Get a specific feedback message from a campaign.
@@ -261,11 +256,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
   **feedbackId** | **string**| The unique id for the feedback message. | 
- **optional** | ***GetCampaignsIdFeedbackIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***CampaignsApiGetCampaignsIdFeedbackIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetCampaignsIdFeedbackIdOpts struct
-
+Optional parameters are passed through a pointer to a CampaignsApiGetCampaignsIdFeedbackIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -275,7 +269,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CampaignFeedback2**](Campaign Feedback_2.md)
+[**CampaignFeedback1**](Campaign Feedback_1.md)
 
 ### Authorization
 
@@ -283,7 +277,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -300,11 +294,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **campaignId** | **string**| The unique id for the campaign. | 
- **optional** | ***GetCampaignsIdSendChecklistOpts** | optional parameters | nil if no parameters
+ **optional** | ***CampaignsApiGetCampaignsIdSendChecklistOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetCampaignsIdSendChecklistOpts struct
-
+Optional parameters are passed through a pointer to a CampaignsApiGetCampaignsIdSendChecklistOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -321,13 +314,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchCampaignsId**
-> Campaign PatchCampaignsId(ctx, campaignId, body)
+> Campaign1 PatchCampaignsId(ctx, body, campaignId)
 Update campaign settings
 
 Update some or all of the settings for a specific campaign.
@@ -337,12 +330,12 @@ Update some or all of the settings for a specific campaign.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **campaignId** | **string**| The unique id for the campaign. | 
   **body** | [**Campaign2**](Campaign2.md)|  | 
+  **campaignId** | **string**| The unique id for the campaign. | 
 
 ### Return type
 
-[**Campaign**](Campaign.md)
+[**Campaign1**](Campaign_1.md)
 
 ### Authorization
 
@@ -356,7 +349,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchCampaignsIdFeedbackId**
-> CampaignFeedback2 PatchCampaignsIdFeedbackId(ctx, campaignId, feedbackId, body)
+> CampaignFeedback1 PatchCampaignsIdFeedbackId(ctx, body, campaignId, feedbackId)
 Update campaign feedback message
 
 Update a specific feedback message for a campaign.
@@ -366,13 +359,13 @@ Update a specific feedback message for a campaign.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**CampaignFeedback2**](CampaignFeedback2.md)|  | 
   **campaignId** | **string**| The unique id for the campaign. | 
   **feedbackId** | **string**| The unique id for the feedback message. | 
-  **body** | [**CampaignFeedback3**](CampaignFeedback3.md)|  | 
 
 ### Return type
 
-[**CampaignFeedback2**](Campaign Feedback_2.md)
+[**CampaignFeedback1**](Campaign Feedback_1.md)
 
 ### Authorization
 
@@ -386,7 +379,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostCampaigns**
-> Campaign PostCampaigns(ctx, body)
+> Campaign1 PostCampaigns(ctx, body)
 Add campaign
 
 Create a new Mailchimp campaign.
@@ -396,11 +389,11 @@ Create a new Mailchimp campaign.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**Campaign1**](Campaign1.md)|  | 
+  **body** | [**Campaign**](Campaign.md)|  | 
 
 ### Return type
 
-[**Campaign**](Campaign.md)
+[**Campaign1**](Campaign_1.md)
 
 ### Authorization
 
@@ -436,7 +429,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -464,7 +457,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -492,7 +485,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -520,7 +513,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -548,13 +541,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostCampaignsIdActionsSchedule**
-> PostCampaignsIdActionsSchedule(ctx, campaignId, body)
+> PostCampaignsIdActionsSchedule(ctx, body, campaignId)
 Schedule campaign
 
 Schedule a campaign for delivery. If you're using Multivariate Campaigns to test send times or sending RSS Campaigns, use the send action instead.
@@ -564,8 +557,8 @@ Schedule a campaign for delivery. If you're using Multivariate Campaigns to test
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**ActionsScheduleBody**](ActionsScheduleBody.md)|  | 
   **campaignId** | **string**| The unique id for the campaign. | 
-  **body** | [**Body1**](Body1.md)|  | 
 
 ### Return type
 
@@ -605,13 +598,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostCampaignsIdActionsTest**
-> PostCampaignsIdActionsTest(ctx, campaignId, body)
+> PostCampaignsIdActionsTest(ctx, body, campaignId)
 Send test email
 
 Send a test email.
@@ -621,8 +614,8 @@ Send a test email.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**ActionsTestBody**](ActionsTestBody.md)|  | 
   **campaignId** | **string**| The unique id for the campaign. | 
-  **body** | [**Body2**](Body2.md)|  | 
 
 ### Return type
 
@@ -662,13 +655,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostCampaignsIdFeedback**
-> CampaignFeedback2 PostCampaignsIdFeedback(ctx, campaignId, body)
+> CampaignFeedback1 PostCampaignsIdFeedback(ctx, body, campaignId)
 Add campaign feedback
 
 Add feedback on a specific campaign.
@@ -678,12 +671,12 @@ Add feedback on a specific campaign.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**CampaignFeedback**](CampaignFeedback.md)|  | 
   **campaignId** | **string**| The unique id for the campaign. | 
-  **body** | [**CampaignFeedback1**](CampaignFeedback1.md)|  | 
 
 ### Return type
 
-[**CampaignFeedback2**](Campaign Feedback_2.md)
+[**CampaignFeedback1**](Campaign Feedback_1.md)
 
 ### Authorization
 
@@ -697,7 +690,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PutCampaignsIdContent**
-> CampaignContent PutCampaignsIdContent(ctx, campaignId, body)
+> CampaignContent PutCampaignsIdContent(ctx, body, campaignId)
 Set campaign content
 
 Set the content for a campaign.
@@ -707,8 +700,8 @@ Set the content for a campaign.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **campaignId** | **string**| The unique id for the campaign. | 
   **body** | [**CampaignContent1**](CampaignContent1.md)|  | 
+  **campaignId** | **string**| The unique id for the campaign. | 
 
 ### Return type
 

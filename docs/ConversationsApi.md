@@ -1,4 +1,4 @@
-# \ConversationsApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -8,7 +8,6 @@ Method | HTTP request | Description
 [**GetConversationsId**](ConversationsApi.md#GetConversationsId) | **Get** /conversations/{conversation_id} | Get conversation
 [**GetConversationsIdMessages**](ConversationsApi.md#GetConversationsIdMessages) | **Get** /conversations/{conversation_id}/messages | List messages
 [**GetConversationsIdMessagesId**](ConversationsApi.md#GetConversationsIdMessagesId) | **Get** /conversations/{conversation_id}/messages/{message_id} | Get message
-
 
 # **GetConversations**
 > TrackedConversations GetConversations(ctx, optional)
@@ -21,11 +20,10 @@ Get a list of conversations for the account. Conversations has been deprecated i
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetConversationsOpts** | optional parameters | nil if no parameters
+ **optional** | ***ConversationsApiGetConversationsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetConversationsOpts struct
-
+Optional parameters are passed through a pointer to a ConversationsApiGetConversationsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -46,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -63,11 +61,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **conversationId** | **string**| The unique id for the conversation. | 
- **optional** | ***GetConversationsIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ConversationsApiGetConversationsIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetConversationsIdOpts struct
-
+Optional parameters are passed through a pointer to a ConversationsApiGetConversationsIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -84,7 +81,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -101,11 +98,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **conversationId** | **string**| The unique id for the conversation. | 
- **optional** | ***GetConversationsIdMessagesOpts** | optional parameters | nil if no parameters
+ **optional** | ***ConversationsApiGetConversationsIdMessagesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetConversationsIdMessagesOpts struct
-
+Optional parameters are passed through a pointer to a ConversationsApiGetConversationsIdMessagesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -125,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -143,11 +139,10 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **conversationId** | **string**| The unique id for the conversation. | 
   **messageId** | **string**| The unique id for the conversation message. | 
- **optional** | ***GetConversationsIdMessagesIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***ConversationsApiGetConversationsIdMessagesIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetConversationsIdMessagesIdOpts struct
-
+Optional parameters are passed through a pointer to a ConversationsApiGetConversationsIdMessagesIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -165,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

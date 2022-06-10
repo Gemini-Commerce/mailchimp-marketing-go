@@ -9,12 +9,11 @@ Name | Type | Description | Notes
 **ListName** | **string** | The name of the list connected to this survey. | [optional] [default to null]
 **Title** | **string** | The title of the survey. | [optional] [default to null]
 **Url** | **string** | The URL for the survey. | [optional] [default to null]
-**Status** | **string** | The survey&#39;s status. | [optional] [default to null]
+**Status** | **string** | The survey&#x27;s status. | [optional] [default to null]
 **PublishedAt** | [**time.Time**](time.Time.md) | The date and time the survey was published in ISO 8601 format. | [optional] [default to null]
 **CreatedAt** | [**time.Time**](time.Time.md) | The date and time the survey was created in ISO 8601 format. | [optional] [default to null]
 **UpdatedAt** | [**time.Time**](time.Time.md) | The date and time the survey was last updated in ISO 8601 format. | [optional] [default to null]
 **TotalResponses** | **int32** | The total number of responses to this survey. | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

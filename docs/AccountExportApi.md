@@ -1,4 +1,4 @@
-# \AccountExportApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -6,9 +6,8 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**GetAccountExportId**](AccountExportApi.md#GetAccountExportId) | **Get** /account-exports/{export_id} | Get account export info
 
-
 # **GetAccountExportId**
-> InlineResponse2001Exports GetAccountExportId(ctx, exportId, optional)
+> InlineResponse2002 GetAccountExportId(ctx, exportId, optional)
 Get account export info
 
 Get information about a specific account export.
@@ -19,11 +18,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **exportId** | **string**| The unique id for the account export. | 
- **optional** | ***GetAccountExportIdOpts** | optional parameters | nil if no parameters
+ **optional** | ***AccountExportApiGetAccountExportIdOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetAccountExportIdOpts struct
-
+Optional parameters are passed through a pointer to a AccountExportApiGetAccountExportIdOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -32,7 +30,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001Exports**](inline_response_200_1_exports.md)
+[**InlineResponse2002**](inline_response_200_2.md)
 
 ### Authorization
 
@@ -40,7 +38,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -9,9 +9,8 @@ Name | Type | Description | Notes
 **DefaultValue** | **string** | The default value for the merge field if &#x60;null&#x60;. | [optional] [default to null]
 **Public** | **bool** | Whether the merge field is displayed on the signup form. | [optional] [default to null]
 **DisplayOrder** | **int32** | The order that the merge field displays on the list signup form. | [optional] [default to null]
-**Options** | [***MergeFieldOptions2**](Merge Field Options_2.md) |  | [optional] [default to null]
+**Options** | [***MergeFieldOptions1**](Merge Field Options_1.md) |  | [optional] [default to null]
 **HelpText** | **string** | Extra text to help the subscriber fill out the form. | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

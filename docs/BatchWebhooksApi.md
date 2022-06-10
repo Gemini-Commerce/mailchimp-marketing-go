@@ -1,4 +1,4 @@
-# \BatchWebhooksApi
+# {{classname}}
 
 All URIs are relative to *https://server.api.mailchimp.com/3.0*
 
@@ -9,7 +9,6 @@ Method | HTTP request | Description
 [**GetBatchWebhooks**](BatchWebhooksApi.md#GetBatchWebhooks) | **Get** /batch-webhooks | List batch webhooks
 [**PatchBatchWebhooks**](BatchWebhooksApi.md#PatchBatchWebhooks) | **Patch** /batch-webhooks/{batch_webhook_id} | Update batch webhook
 [**PostBatchWebhooks**](BatchWebhooksApi.md#PostBatchWebhooks) | **Post** /batch-webhooks | Add batch webhook
-
 
 # **DeleteBatchWebhookId**
 > DeleteBatchWebhookId(ctx, batchWebhookId)
@@ -34,13 +33,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **GetBatchWebhook**
-> BatchWebhook GetBatchWebhook(ctx, batchWebhookId, optional)
+> BatchWebhook1 GetBatchWebhook(ctx, batchWebhookId, optional)
 Get batch webhook info
 
 Get information about a specific batch webhook.
@@ -51,11 +50,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **batchWebhookId** | **string**| The unique id for the batch webhook. | 
- **optional** | ***GetBatchWebhookOpts** | optional parameters | nil if no parameters
+ **optional** | ***BatchWebhooksApiGetBatchWebhookOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetBatchWebhookOpts struct
-
+Optional parameters are passed through a pointer to a BatchWebhooksApiGetBatchWebhookOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
@@ -64,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**BatchWebhook**](Batch Webhook.md)
+[**BatchWebhook1**](Batch Webhook_1.md)
 
 ### Authorization
 
@@ -72,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -88,11 +86,10 @@ Get all webhooks that have been configured for batches.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***GetBatchWebhooksOpts** | optional parameters | nil if no parameters
+ **optional** | ***BatchWebhooksApiGetBatchWebhooksOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a GetBatchWebhooksOpts struct
-
+Optional parameters are passed through a pointer to a BatchWebhooksApiGetBatchWebhooksOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fields** | [**optional.Interface of []string**](string.md)| A comma-separated list of fields to return. Reference parameters of sub-objects with dot notation. | 
@@ -110,13 +107,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/problem+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PatchBatchWebhooks**
-> BatchWebhook PatchBatchWebhooks(ctx, batchWebhookId, body)
+> BatchWebhook1 PatchBatchWebhooks(ctx, body, batchWebhookId)
 Update batch webhook
 
 Update a webhook that will fire whenever any batch request completes processing.
@@ -126,12 +123,12 @@ Update a webhook that will fire whenever any batch request completes processing.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **batchWebhookId** | **string**| The unique id for the batch webhook. | 
   **body** | [**BatchWebhook2**](BatchWebhook2.md)|  | 
+  **batchWebhookId** | **string**| The unique id for the batch webhook. | 
 
 ### Return type
 
-[**BatchWebhook**](Batch Webhook.md)
+[**BatchWebhook1**](Batch Webhook_1.md)
 
 ### Authorization
 
@@ -145,7 +142,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **PostBatchWebhooks**
-> BatchWebhook PostBatchWebhooks(ctx, body)
+> BatchWebhook1 PostBatchWebhooks(ctx, body)
 Add batch webhook
 
 Configure a webhook that will fire whenever any batch request completes processing.  You may only have a maximum of 20 batch webhooks.
@@ -155,11 +152,11 @@ Configure a webhook that will fire whenever any batch request completes processi
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**BatchWebhook1**](BatchWebhook1.md)|  | 
+  **body** | [**BatchWebhook**](BatchWebhook.md)|  | 
 
 ### Return type
 
-[**BatchWebhook**](Batch Webhook.md)
+[**BatchWebhook1**](Batch Webhook_1.md)
 
 ### Authorization
 
